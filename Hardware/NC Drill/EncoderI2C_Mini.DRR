@@ -1,0 +1,19 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: EncoderI2C_Mini.PcbDoc   23/02/2020  23:30:06
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : EncoderI2C_Mini-RoundHoles.TXT
+ASCII SlotHoles File : EncoderI2C_Mini-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.305mm)                                           Round             62        PTH        0.00inch (0.00mm)
+T2      18mil (0.457mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T3      47mil (1.2mm)                                             Round             10        PTH        0.00inch (0.00mm)
+T4      53mil (1.35mm)                                            Round             5         PTH        0.00inch (0.00mm)
+T5      79mil (2mm)                                               Slot              2         PTH        0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              80
+
+Total Processing Time (hh:mm:ss) : 00:00:00

@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: d:\Users\Saimon\Documents\Git\I2CEncoder\HW\EncoderI2C_Mini\EncoderI2C_Mini.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=encoderi2c_mini-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=encoderi2c_mini-slotholes.txt|DrillLayers=gtl,gbl

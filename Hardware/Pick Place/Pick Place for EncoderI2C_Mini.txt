@@ -1,0 +1,19 @@
+File Design Information:
+
+Date:       11/02/20
+Time:       08:49
+Revision:   66603d5bf51863bd9f556c8dbbdfdd773207ddf3
+Variant:    No variations
+Units used: mm
+
+Designator Comment       Layer       Footprint Center-X(mm) Center-Y(mm) Rotation Description                                                              MouserCode           PartNumber         Value       
+L1         600R@100MHz   BottomLayer L0402     -2.7000      3.2000       270      "Ferrite Bead"                                                           963-BK1005HS601-T    BK1005HS601-T      600R@100MHz 
+C4         C-EUC0402     BottomLayer C0402     1.5000       5.0000       360      Capacitor                                                                81-GCM155R71E473KA5D GCM155R71E473KA55D 47n         
+C3         C-EUC0402     BottomLayer C0402     -0.8000      5.0000       180      Capacitor                                                                81-GCM155R71E473KA5D GCM155R71E473KA55D 47n         
+U1         ATtiny202/402 BottomLayer 8S1_L     0.7000       -1.0000      270      "Microcontrollori a 8 bit - MCU 20MHz, 4KB, SOIC8, Ind 125C, Green, T&R" 579-ATTINY402-SSFR   ATTINY402-SSFR     ""          
+R4         R-EU_R0402    BottomLayer R0402     1.5000       3.6000       360      Resistor                                                                 603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+R3         R-EU_R0402    BottomLayer R0402     -0.8000      3.6000       180      Resistor                                                                 603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+R2         R-EU_R0402    BottomLayer R0402     3.3000       3.7000       90       Resistor                                                                 603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+R1         R-EU_R0402    BottomLayer R0402     4.1000       -3.9000      270      Resistor                                                                 603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+C2         C-EUC0805     BottomLayer C0805     -5.0000      5.1000       180      Capacitor                                                                603-CC805ZKY5V7BB475 CC0805ZKY5V7BB475  4u7         
+C1         C-EUC0402     BottomLayer C0402     -2.7000      1.1000       270      Capacitor                                                                603-CC402KRX5R8BB104 GRM155R61C104KA88D 100n        
