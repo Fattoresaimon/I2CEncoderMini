@@ -1,0 +1,355 @@
+format_version: '2'
+name: I2CEncoderMini
+versions:
+  api: '1.0'
+  backend: 1.6.148
+  commit: 605f106ab95776472e3febf2fac2471441fb1816
+  content: 1.0.1686
+  content_pack_name: acme-packs-all
+  format: '2'
+  frontend: 1.6.1894
+board:
+  identifier: CustomBoard
+  device: ATtiny402-SSNR
+details: null
+application: null
+middlewares: {}
+drivers:
+  CLKCTRL:
+    user_label: CLKCTRL
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::CLKCTRL::driver_config_definition::CLKCTRL::Drivers:CLKCTRL:Init
+    functionality: System
+    api: Drivers:CLKCTRL:Init
+    configuration:
+      clkctrl_mclkctrla_cksel: 20MHz Internal Oscillator (OSC20M)
+      clkctrl_mclkctrlb_pdiv: '2'
+      clkctrl_mclkctrlb_pen: true
+      clkctrl_mclklock_locken: false
+      clkctrl_osc16mctrla_runstdby: false
+      clkctrl_osc20mctrla_runstdby: false
+      clkctrl_osc32kctrla_runstdby: false
+      cpu_clock_source: Main Clock (CLK_MAIN)
+      enable_clk_per: true
+      enable_extclk: false
+      enable_main: true
+      enable_osc16m: false
+      enable_osc20m: true
+      enable_osculp1k: false
+      enable_osculp32k: true
+      extosc: 32768
+      nvm_clock_source: Main Clock (CLK_MAIN)
+      osculp1k_clksel_clksel: 32KHz Internal Ultra Low Power Oscillator (OSCULP32K)
+      ram_clock_source: Main Clock (CLK_MAIN)
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: CPU
+          input: CPU
+          external: false
+          external_frequency: 0
+        configuration: {}
+  WDT:
+    user_label: WDT
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::WDT::driver_config_definition::WDT::Drivers:WDT:Init
+    functionality: WDT
+    api: Drivers:WDT:Init
+    configuration:
+      wdt_ctrla_period: Watch-Dog timer Off
+      wdt_ctrla_window: Window mode off
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: WDT
+          input: 32KHz divided by 32
+          external: false
+          external_frequency: 0
+        configuration:
+          wdt_clock_source: 32KHz divided by 32
+  TIMER_0:
+    user_label: TIMER_0
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::TCA0::driver_config_definition::Normal.Mode::Drivers:TCA:Init
+    functionality: Timer
+    api: Drivers:TCA:Init
+    configuration:
+      inc_isr_harness: true
+      tca_cmp0: 0
+      tca_cmp1: 0
+      tca_cmp2: 0
+      tca_cnt: 0
+      tca_ctrla_clksel: System Clock / 16
+      tca_ctrla_enable: true
+      tca_ctrlb_alupd: false
+      tca_ctrlb_cmp0en: false
+      tca_ctrlb_cmp1en: false
+      tca_ctrlb_cmp2en: false
+      tca_ctrlb_wgmode: Normal Mode
+      tca_ctrlc_cmp0ov: false
+      tca_ctrlc_cmp1ov: false
+      tca_ctrlc_cmp2ov: false
+      tca_dbgctrl_dbgrun: false
+      tca_evctrl_cntei: false
+      tca_evctrl_evact: Count on positive edge event
+      tca_intctrl_cmp0: false
+      tca_intctrl_cmp1: false
+      tca_intctrl_cmp2: false
+      tca_intctrl_ovf: true
+      tca_per: 624
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: TCA
+          input: Main Clock (CLK_MAIN)
+          external: false
+          external_frequency: 0
+        configuration:
+          tca_clock_source: Main Clock (CLK_MAIN)
+  TIMER_1:
+    user_label: TIMER_1
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::TCB0::driver_config_definition::Init::Drivers:TCB:Init
+    functionality: Timer
+    api: Drivers:TCB:Init
+    configuration:
+      inc_isr_harness: true
+      tcb_ccmp: 624
+      tcb_cnt: 0
+      tcb_ctrla_clksel: Use Clock from TCA
+      tcb_ctrla_enable: true
+      tcb_ctrla_runstdby: true
+      tcb_ctrla_syncupd: false
+      tcb_ctrlb_async: true
+      tcb_ctrlb_ccmpen: false
+      tcb_ctrlb_ccmpinit: false
+      tcb_ctrlb_cntmode: Single Shot
+      tcb_dbgctrl_dbgrun: false
+      tcb_evctrl_captei: true
+      tcb_evctrl_edge: false
+      tcb_evctrl_filter: false
+      tcb_intctrl_capt: true
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: TCB
+          input: Main Clock (CLK_MAIN)
+          external: false
+          external_frequency: 0
+        configuration:
+          tcb_clock_source: Main Clock (CLK_MAIN)
+  EVENT_SYSTEM_0:
+    user_label: EVENT_SYSTEM_0
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::EVSYS::driver_config_definition::EVSYS::Drivers:EVSYS:Init
+    functionality: Event_System
+    api: Drivers:EVSYS:Init
+    configuration:
+      evsys_asyncch0_asyncch0: 'Off'
+      evsys_asyncch1_asyncch1: 'Off'
+      evsys_asyncuser0_asyncuser0: Synchronous Event Channel 0
+      evsys_asyncuser10_asyncuser10: 'Off'
+      evsys_asyncuser1_asyncuser1: 'Off'
+      evsys_asyncuser2_asyncuser2: 'Off'
+      evsys_asyncuser3_asyncuser3: 'Off'
+      evsys_asyncuser4_asyncuser4: 'Off'
+      evsys_asyncuser5_asyncuser5: 'Off'
+      evsys_asyncuser6_asyncuser6: 'Off'
+      evsys_asyncuser7_asyncuser7: 'Off'
+      evsys_asyncuser8_asyncuser8: 'Off'
+      evsys_asyncuser9_asyncuser9: 'Off'
+      evsys_syncch0_syncch0: 'Off'
+      evsys_syncuser0_syncuser0: 'Off'
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  FLASH_0:
+    user_label: FLASH_0
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::NVMCTRL::driver_config_definition::NVMCTRL.Basic::Drivers:NVMCTRL:Basic
+    functionality: Flash
+    api: Drivers:NVMCTRL:Basic
+    configuration:
+      nvmctrl_ctrlb_apcwp: false
+      nvmctrl_ctrlb_bootlock: false
+      nvmctrl_intctrl_eeready: false
+      nvmctrl_irq_driven: false
+      nvmctrl_relocate_flash_functions: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  CPUINT:
+    user_label: CPUINT
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::CPUINT::driver_config_definition::CPUINT::Drivers:CPUINT:Init
+    functionality: System
+    api: Drivers:CPUINT:Init
+    configuration:
+      cpuint_ctrla_cvt: false
+      cpuint_ctrla_ivsel: false
+      cpuint_ctrla_lvl0rr: false
+      cpuint_global_interrupt: true
+      cpuint_lvl0pri_lvl0pri: 0
+      cpuint_lvl1vec_lvl1vec: 0
+      inc_isr_harness: true
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  SLPCTRL:
+    user_label: SLPCTRL
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::SLPCTRL::driver_config_definition::SLPCTRL::Drivers:SLPCTRL:Init
+    functionality: System
+    api: Drivers:SLPCTRL:Init
+    configuration:
+      slpctrl_ctrla_sen: false
+      slpctrl_ctrla_smode: Idle mode
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  I2C:
+    user_label: I2C
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::TWI0::driver_config_definition::I2C.Slave.Interrupt::Drivers:I2C:Slave
+    functionality: I2C
+    api: Drivers:I2C:Slave
+    configuration:
+      f_scl: 100000
+      inc_isr_harness: false
+      t_rise: 0
+      twi_ctrla_fmpen: false
+      twi_ctrla_sdahold: SDA hold time off
+      twi_ctrla_sdasetup: SDA setup time is 4 clock cycles
+      twi_dbgctrl_dbgrun: false
+      twi_mctrla_enable: false
+      twi_mctrla_qcen: false
+      twi_mctrla_rien: false
+      twi_mctrla_smen: false
+      twi_mctrla_timeout: Bus Timeout Disabled
+      twi_mctrla_wien: false
+      twi_mstatus_busstate: false
+      twi_saddr: 32
+      twi_saddr_gcren: false
+      twi_saddrmask_addren: false
+      twi_saddrmask_addrmask: 0
+      twi_sctrla_apien: true
+      twi_sctrla_dien: true
+      twi_sctrla_enable: true
+      twi_sctrla_pien: true
+      twi_sctrla_pmen: false
+      twi_sctrla_smen: true
+    optional_signals:
+    - identifier: I2C:SCL
+      pad: PA2
+      mode: Enabled
+      configuration: null
+      definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::optional_signal_definition::TWI0.SCL
+      name: TWI0/SCL
+      label: SCL
+    - identifier: I2C:SDA
+      pad: PA1
+      mode: Enabled
+      configuration: null
+      definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::optional_signal_definition::TWI0.SDA
+      name: TWI0/SDA
+      label: SDA
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: TWI
+          input: Main Clock (CLK_MAIN)
+          external: false
+          external_frequency: 0
+        configuration:
+          twi_clock_source: Main Clock (CLK_MAIN)
+  BOD:
+    user_label: BOD
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::BOD::driver_config_definition::BOD::Drivers:BOD:Init
+    functionality: System
+    api: Drivers:BOD:Init
+    configuration:
+      bod_ctrla_sleep: Disabled
+      bod_intctrl_vlmcfg: Interrupt when supply goes above VLM level
+      bod_intctrl_vlmie: false
+      bod_vlmctrla_vlmlvl: VLM threshold 5% above BOD level
+      inc_isr_harness: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: BOD
+          input: 32KHz divided by 32
+          external: false
+          external_frequency: 0
+        configuration:
+          bod_clock_source: 32KHz divided by 32
+pads:
+  RB:
+    name: PA6
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::pad::PA6
+    mode: Advanced
+    user_label: RB
+    configuration:
+      pad_dir: In
+      pad_initial_level: Low
+      pad_invert: Not inverted
+      pad_isc: Sense Both Edges
+      pad_pull_config: Pull-up
+  RA:
+    name: PA7
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::pad::PA7
+    mode: Advanced
+    user_label: RA
+    configuration:
+      pad_dir: In
+      pad_initial_level: Low
+      pad_invert: Not inverted
+      pad_isc: Sense Both Edges
+      pad_pull_config: Pull-up
+  SDA:
+    name: PA1
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::pad::PA1
+    mode: Advanced
+    user_label: SDA
+    configuration: null
+  SCL:
+    name: PA2
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::pad::PA2
+    mode: Advanced
+    user_label: SCL
+    configuration: null
+  INT:
+    name: PA0
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::pad::PA0
+    mode: Advanced
+    user_label: INT
+    configuration:
+      pad_dir: In
+      pad_initial_level: High
+      pad_invert: Not inverted
+      pad_isc: Interrupt disabled but input buffer enabled
+      pad_pull_config: 'Off'
+  SW:
+    name: PA3
+    definition: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::pad::PA3
+    mode: Advanced
+    user_label: SW
+    configuration:
+      pad_dir: In
+      pad_initial_level: Low
+      pad_invert: Not inverted
+      pad_isc: Interrupt disabled but input buffer enabled
+      pad_pull_config: Pull-up
+toolchain_options:
+- definition:
+    identifier: Atmel:ATtiny160x_drivers:1.0.0::ATtiny402-SSNR::environment_definition::All:Atmel.Studio:7.0.0
+  configuration:
+    compiler_config:
+      avrgcc_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      avrgcc_linker_miscellaneous_LinkerFlags: ''

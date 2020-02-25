@@ -1,0 +1,841 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o (exit)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+                              Encoder.o (__do_copy_data)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+                              Configuration.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(memcpy.o)
+                              src/nvmctrl_basic.o (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+I2C_stop_interrupt_handler
+                    0x2               src/i2c_slave.o
+X4_n                0x1               Configuration.o
+DPPERIOD            0x1               i2c_register.o
+X4_nn               0x1               Configuration.o
+I2CADDRESS          0x1               i2c_register.o
+INTCONF             0x1               i2c_register.o
+CVAL                0x4               i2c_register.o
+GCONF               0x1               i2c_register.o
+I2C_write_interrupt_handler
+                    0x2               src/i2c_slave.o
+I2C_address_interrupt_handler
+                    0x2               src/i2c_slave.o
+X4_pp               0x1               Configuration.o
+DoublePush          0x2               i2c_register.o
+X1_n                0x1               Configuration.o
+CMIN                0x4               i2c_register.o
+ISTEP               0x4               i2c_register.o
+X2_p                0x1               Configuration.o
+sys_timer           0x1               main.o
+enc_status          0x1               Encoder.o
+I2C_collision_interrupt_handler
+                    0x2               src/i2c_slave.o
+X4_p                0x1               Configuration.o
+data_type           0x1               i2c_register.o
+CMAX                0x4               i2c_register.o
+X2_n                0x1               Configuration.o
+wrap                0x1               Configuration.o
+I2C_bus_error_interrupt_handler
+                    0x2               src/i2c_slave.o
+ESTATUS             0x1               i2c_register.o
+X1_p                0x1               Configuration.o
+I2C_read_interrupt_handler
+                    0x2               src/i2c_slave.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+ .text          0x00000000        0x0 atmel_start.o
+ .data          0x00000000        0x0 atmel_start.o
+ .bss           0x00000000        0x0 atmel_start.o
+ .text          0x00000000        0x0 Configuration.o
+ .data          0x00000000        0x0 Configuration.o
+ .bss           0x00000000        0x0 Configuration.o
+ .text.Encoder_Config
+                0x00000000       0xae Configuration.o
+ .text          0x00000000        0x0 driver_isr.o
+ .data          0x00000000        0x0 driver_isr.o
+ .bss           0x00000000        0x0 driver_isr.o
+ .text          0x00000000        0x0 Encoder.o
+ .data          0x00000000        0x0 Encoder.o
+ .bss           0x00000000        0x0 Encoder.o
+ .text.EncoderSwitch_GetValueFiltered
+                0x00000000       0x44 Encoder.o
+ .bss.e_istep   0x00000000        0x4 Encoder.o
+ .bss.e_cmin    0x00000000        0x4 Encoder.o
+ .bss.e_cmax    0x00000000        0x4 Encoder.o
+ .data.e_cval   0x00000000        0x4 Encoder.o
+ .bss.enc_deb_cnt
+                0x00000000        0x2 Encoder.o
+ .avr.prop      0x00000000       0x16 Encoder.o
+ .text          0x00000000        0x0 i2c_register.o
+ .data          0x00000000        0x0 i2c_register.o
+ .bss           0x00000000        0x0 i2c_register.o
+ .avr.prop      0x00000000       0x28 i2c_register.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text          0x00000000        0x0 src/bod.o
+ .data          0x00000000        0x0 src/bod.o
+ .bss           0x00000000        0x0 src/bod.o
+ .text          0x00000000        0x0 src/clkctrl.o
+ .data          0x00000000        0x0 src/clkctrl.o
+ .bss           0x00000000        0x0 src/clkctrl.o
+ .text          0x00000000        0x0 src/cpuint.o
+ .data          0x00000000        0x0 src/cpuint.o
+ .bss           0x00000000        0x0 src/cpuint.o
+ .text          0x00000000        0x0 src/driver_init.o
+ .data          0x00000000        0x0 src/driver_init.o
+ .bss           0x00000000        0x0 src/driver_init.o
+ .text.mcu_init
+                0x00000000       0x52 src/driver_init.o
+ .text.TIMER_0_initialization
+                0x00000000        0x2 src/driver_init.o
+ .text.TIMER_1_initialization
+                0x00000000        0x2 src/driver_init.o
+ .text.EVENT_SYSTEM_0_initialization
+                0x00000000        0x2 src/driver_init.o
+ .text.FLASH_0_initialization
+                0x00000000        0x2 src/driver_init.o
+ .text.I2C_initialization
+                0x00000000       0x36 src/driver_init.o
+ .text          0x00000000        0x0 src/evsys.o
+ .data          0x00000000        0x0 src/evsys.o
+ .bss           0x00000000        0x0 src/evsys.o
+ .text          0x00000000        0x0 src/i2c_slave.o
+ .data          0x00000000        0x0 src/i2c_slave.o
+ .bss           0x00000000        0x0 src/i2c_slave.o
+ .text.I2C_close
+                0x00000000        0xc src/i2c_slave.o
+ .text.I2C_isr  0x00000000       0xd4 src/i2c_slave.o
+ .text.I2C_enable
+                0x00000000        0xc src/i2c_slave.o
+ .text.I2C_send_nack
+                0x00000000        0x8 src/i2c_slave.o
+ .text.I2C_goto_unaddressed
+                0x00000000       0x10 src/i2c_slave.o
+ .text.I2C_read_callback
+                0x00000000       0x10 src/i2c_slave.o
+ .text.I2C_write_callback
+                0x00000000       0x10 src/i2c_slave.o
+ .text.I2C_address_callback
+                0x00000000       0x10 src/i2c_slave.o
+ .text.I2C_stop_callback
+                0x00000000       0x10 src/i2c_slave.o
+ .text.I2C_collision_callback
+                0x00000000       0x10 src/i2c_slave.o
+ .text.I2C_bus_error_callback
+                0x00000000       0x10 src/i2c_slave.o
+ .text.I2C_set_bus_error_callback
+                0x00000000        0xa src/i2c_slave.o
+ .text          0x00000000        0x0 src/nvmctrl_basic.o
+ .data          0x00000000        0x0 src/nvmctrl_basic.o
+ .bss           0x00000000        0x0 src/nvmctrl_basic.o
+ .text.FLASH_0_read_eeprom_block
+                0x00000000        0xa src/nvmctrl_basic.o
+ .text.FLASH_0_write_eeprom_block
+                0x00000000       0x78 src/nvmctrl_basic.o
+ .text.FLASH_0_is_eeprom_ready
+                0x00000000        0xa src/nvmctrl_basic.o
+ .text.FLASH_0_read_flash_byte
+                0x00000000        0x8 src/nvmctrl_basic.o
+ .text.FLASH_0_write_flash_byte
+                0x00000000       0x64 src/nvmctrl_basic.o
+ .text.FLASH_0_erase_flash_page
+                0x00000000       0x1c src/nvmctrl_basic.o
+ .text.FLASH_0_write_flash_page
+                0x00000000       0x26 src/nvmctrl_basic.o
+ .text.FLASH_0_write_flash_block
+                0x00000000       0xbc src/nvmctrl_basic.o
+ .text.FLASH_0_write_flash_stream
+                0x00000000       0x28 src/nvmctrl_basic.o
+ .text          0x00000000        0x0 src/protected_io.o
+ .data          0x00000000        0x0 src/protected_io.o
+ .bss           0x00000000        0x0 src/protected_io.o
+ .text          0x00000000        0x0 src/slpctrl.o
+ .data          0x00000000        0x0 src/slpctrl.o
+ .bss           0x00000000        0x0 src/slpctrl.o
+ .text.SLPCTRL_set_sleep_mode
+                0x00000000       0x10 src/slpctrl.o
+ .text          0x00000000        0x0 src/tca.o
+ .data          0x00000000        0x0 src/tca.o
+ .bss           0x00000000        0x0 src/tca.o
+ .text          0x00000000        0x0 src/tcb.o
+ .data          0x00000000        0x0 src/tcb.o
+ .bss           0x00000000        0x0 src/tcb.o
+ .text          0x00000000        0x0 src/wdt.o
+ .data          0x00000000        0x0 src/wdt.o
+ .bss           0x00000000        0x0 src/wdt.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(memcpy.o)
+ .text.avr-libc
+                0x00000000       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00001000         xr
+data             0x00803f00         0x00000100         rw !x
+eeprom           0x00810000         0x00000080         rw !x
+fuse             0x00820000         0x0000000a         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x803f00
+                0x00008000                __RODATA_PM_OFFSET__ = 0x8000
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+LOAD atmel_start.o
+LOAD Configuration.o
+LOAD driver_isr.o
+LOAD Encoder.o
+LOAD i2c_register.o
+LOAD main.o
+LOAD src/bod.o
+LOAD src/clkctrl.o
+LOAD src/cpuint.o
+LOAD src/driver_init.o
+LOAD src/evsys.o
+LOAD src/i2c_slave.o
+LOAD src/nvmctrl_basic.o
+LOAD src/protected_io.o
+LOAD src/slpctrl.o
+LOAD src/tca.o
+LOAD src/tcb.o
+LOAD src/wdt.o
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libm.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls\libattiny402.a
+END GROUP
+                [0x00000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00803f00]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
+                [0x00001000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x100000
+                [0x00000100]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000080]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000a]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+                0x00008000                __RODATA_PM_OFFSET__ = DEFINED (__RODATA_PM_OFFSET__)?__RODATA_PM_OFFSET__:0x8000
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xf90
+ *(.vectors)
+ .vectors       0x00000000       0x34 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.Encoder_PushButton_FSM
+                0x00000034        0xe Encoder.o
+ .progmem.gcc_sw_table.I2C_read_handler
+                0x00000042       0xe6 i2c_register.o
+ .progmem.gcc_sw_table.I2C_write_handler
+                0x00000128       0xe6 i2c_register.o
+                0x0000020e                . = ALIGN (0x2)
+                0x0000020e                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000020e        0x0 linker stubs
+ *(.trampolines*)
+                0x0000020e                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x0000020e                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000020e                __ctors_start = .
+ *(.ctors)
+                0x0000020e                __ctors_end = .
+                0x0000020e                __dtors_start = .
+ *(.dtors)
+                0x0000020e                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000020e        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+                0x0000020e                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000020e        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000021a       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+                0x0000021a                __do_copy_data
+ .init4         0x00000230       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+                0x00000230                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000240        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+ *(.init9)
+ *(.text)
+ .text          0x00000244        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+                0x00000244                __vector_22
+                0x00000244                __vector_1
+                0x00000244                __vector_24
+                0x00000244                __vector_12
+                0x00000244                __bad_interrupt
+                0x00000244                __vector_6
+                0x00000244                __vector_23
+                0x00000244                __vector_25
+                0x00000244                __vector_11
+                0x00000244                __vector_17
+                0x00000244                __vector_7
+                0x00000244                __vector_5
+                0x00000244                __vector_4
+                0x00000244                __vector_9
+                0x00000244                __vector_2
+                0x00000244                __vector_21
+                0x00000244                __vector_15
+                0x00000244                __vector_14
+                0x00000244                __vector_10
+                0x00000244                __vector_16
+                0x00000244                __vector_18
+                0x00000244                __vector_20
+                0x00000246                . = ALIGN (0x2)
+ *(.text.*)
+ .text.atmel_start_init
+                0x00000246        0x2 atmel_start.o
+                0x00000246                atmel_start_init
+ .text.Gconf_process
+                0x00000248       0xfa Configuration.o
+                0x00000248                Gconf_process
+ .text.Int_set  0x00000342        0xc Configuration.o
+                0x00000342                Int_set
+ .text.Ext_Int_Set
+                0x0000034e       0x12 Configuration.o
+                0x0000034e                Ext_Int_Set
+ .text.Ext_Int_Reset
+                0x00000360       0x26 Configuration.o
+                0x00000360                Ext_Int_Reset
+ .text.__vector_8
+                0x00000386       0x4c driver_isr.o
+                0x00000386                __vector_8
+ .text.__vector_13
+                0x000003d2       0x4c driver_isr.o
+                0x000003d2                __vector_13
+ .text.__vector_3
+                0x0000041e       0x4a driver_isr.o
+                0x0000041e                __vector_3
+ .text.Encoder_TimerB_START
+                0x00000468       0x10 Encoder.o
+                0x00000468                Encoder_TimerB_START
+ .text.Encoder_AB_Interrupt
+                0x00000478      0x220 Encoder.o
+                0x00000478                Encoder_AB_Interrupt
+ .text.Encoder_PushButton_FSM
+                0x00000698      0x252 Encoder.o
+                0x00000698                Encoder_PushButton_FSM
+ .text.I2C_stop_handler
+                0x000008ea        0x2 i2c_register.o
+                0x000008ea                I2C_stop_handler
+ .text.I2C_error_handler
+                0x000008ec        0x2 i2c_register.o
+                0x000008ec                I2C_error_handler
+ .text.I2C_address_handler
+                0x000008ee        0x6 i2c_register.o
+                0x000008ee                I2C_address_handler
+ .text.I2C_read_handler
+                0x000008f4      0x110 i2c_register.o
+                0x000008f4                I2C_read_handler
+ .text.I2C_write_handler
+                0x00000a04      0x178 i2c_register.o
+                0x00000a04                I2C_write_handler
+ .text.I2C_init_clock_stretch
+                0x00000b7c       0x8a i2c_register.o
+                0x00000b7c                I2C_init_clock_stretch
+ .text.SystemTimer
+                0x00000c06        0x8 main.o
+                0x00000c06                SystemTimer
+ .text.startup.main
+                0x00000c0e       0x14 main.o
+                0x00000c0e                main
+ .text.BOD_init
+                0x00000c22        0xa src/bod.o
+                0x00000c22                BOD_init
+ .text.CLKCTRL_init
+                0x00000c2c        0xe src/clkctrl.o
+                0x00000c2c                CLKCTRL_init
+ .text.CPUINT_init
+                0x00000c3a        0x6 src/cpuint.o
+                0x00000c3a                CPUINT_init
+ .text.system_init
+                0x00000c40      0x10c src/driver_init.o
+                0x00000c40                system_init
+ .text.EVENT_SYSTEM_0_init
+                0x00000d4c        0xa src/evsys.o
+                0x00000d4c                EVENT_SYSTEM_0_init
+ .text.I2C_init
+                0x00000d56       0x3e src/i2c_slave.o
+                0x00000d56                I2C_init
+ .text.I2C_open
+                0x00000d94        0xc src/i2c_slave.o
+                0x00000d94                I2C_open
+ .text.__vector_19
+                0x00000da0      0x118 src/i2c_slave.o
+                0x00000da0                __vector_19
+ .text.I2C_read
+                0x00000eb8        0x6 src/i2c_slave.o
+                0x00000eb8                I2C_read
+ .text.I2C_write
+                0x00000ebe        0xe src/i2c_slave.o
+                0x00000ebe                I2C_write
+ .text.I2C_send_ack
+                0x00000ecc        0x8 src/i2c_slave.o
+                0x00000ecc                I2C_send_ack
+ .text.I2C_set_read_callback
+                0x00000ed4        0xa src/i2c_slave.o
+                0x00000ed4                I2C_set_read_callback
+ .text.I2C_set_write_callback
+                0x00000ede        0xa src/i2c_slave.o
+                0x00000ede                I2C_set_write_callback
+ .text.I2C_set_address_callback
+                0x00000ee8        0xa src/i2c_slave.o
+                0x00000ee8                I2C_set_address_callback
+ .text.I2C_set_stop_callback
+                0x00000ef2        0xa src/i2c_slave.o
+                0x00000ef2                I2C_set_stop_callback
+ .text.I2C_set_collision_callback
+                0x00000efc        0xa src/i2c_slave.o
+                0x00000efc                I2C_set_collision_callback
+ .text.FLASH_0_init
+                0x00000f06        0x4 src/nvmctrl_basic.o
+                0x00000f06                FLASH_0_init
+ .text.FLASH_0_read_eeprom_byte
+                0x00000f0a        0x8 src/nvmctrl_basic.o
+                0x00000f0a                FLASH_0_read_eeprom_byte
+ .text.FLASH_0_write_eeprom_byte
+                0x00000f12       0x34 src/nvmctrl_basic.o
+                0x00000f12                FLASH_0_write_eeprom_byte
+ .text.protected_write_io
+                0x00000f46        0x8 src/protected_io.o
+                0x00000f46                protected_write_io
+ .text.SLPCTRL_init
+                0x00000f4e        0x4 src/slpctrl.o
+                0x00000f4e                SLPCTRL_init
+ .text.TIMER_0_init
+                0x00000f52       0x18 src/tca.o
+                0x00000f52                TIMER_0_init
+ .text.TIMER_1_init
+                0x00000f6a       0x1e src/tcb.o
+                0x00000f6a                TIMER_1_init
+ .text.WDT_init
+                0x00000f88        0x4 src/wdt.o
+                0x00000f88                WDT_init
+                0x00000f8c                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000f8c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+                0x00000f8c                _exit
+                0x00000f8c                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000f8c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000f90                _etext = .
+
+.rodata
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+
+.data           0x00803f00        0x4 load address 0x00000f90
+                0x00803f00                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.tempAdd  0x00803f00        0x3 i2c_register.o
+                0x00803f00                tempAdd
+ .data.isFirstByte.3460
+                0x00803f03        0x1 src/i2c_slave.o
+ *(.gnu.linkonce.d*)
+                0x00803f04                . = ALIGN (0x2)
+                0x00803f04                _edata = .
+                0x00803f04                PROVIDE (__data_end, .)
+
+.bss            0x00803f04       0x38
+                0x00803f04                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.pb_status.3546
+                0x00803f04        0x1 Encoder.o
+ .bss.double_push_delay
+                0x00803f05        0x2 Encoder.o
+                0x00803f05                double_push_delay
+ .bss.double_push_cnt
+                0x00803f07        0x2 Encoder.o
+                0x00803f07                double_push_cnt
+ .bss.pb_cnt    0x00803f09        0x1 Encoder.o
+                0x00803f09                pb_cnt
+ .bss.pb_fsm    0x00803f0a        0x1 Encoder.o
+                0x00803f0a                pb_fsm
+ .bss.AddCnt    0x00803f0b        0x1 i2c_register.o
+                0x00803f0b                AddCnt
+ .bss.register_address
+                0x00803f0c        0x1 i2c_register.o
+                0x00803f0c                register_address
+ *(COMMON)
+ COMMON         0x00803f0d        0x9 Configuration.o
+                0x00803f0d                X4_n
+                0x00803f0e                X4_nn
+                0x00803f0f                X4_pp
+                0x00803f10                X1_n
+                0x00803f11                X2_p
+                0x00803f12                X4_p
+                0x00803f13                X2_n
+                0x00803f14                wrap
+                0x00803f15                X1_p
+ COMMON         0x00803f16        0x1 Encoder.o
+                0x00803f16                enc_status
+ COMMON         0x00803f17       0x18 i2c_register.o
+                0x00803f17                DPPERIOD
+                0x00803f18                I2CADDRESS
+                0x00803f19                INTCONF
+                0x00803f1a                CVAL
+                0x00803f1e                GCONF
+                0x00803f1f                DoublePush
+                0x00803f21                CMIN
+                0x00803f25                ISTEP
+                0x00803f29                data_type
+                0x00803f2a                CMAX
+                0x00803f2e                ESTATUS
+ COMMON         0x00803f2f        0x1 main.o
+                0x00803f2f                sys_timer
+ COMMON         0x00803f30        0xc src/i2c_slave.o
+                0x00803f30                I2C_stop_interrupt_handler
+                0x00803f32                I2C_write_interrupt_handler
+                0x00803f34                I2C_address_interrupt_handler
+                0x00803f36                I2C_collision_interrupt_handler
+                0x00803f38                I2C_bus_error_interrupt_handler
+                0x00803f3a                I2C_read_interrupt_handler
+                0x00803f3c                PROVIDE (__bss_end, .)
+                0x00000f90                __data_load_start = LOADADDR (.data)
+                0x00000f94                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00803f3c        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00803f3c                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x1
+ *(.eeprom*)
+ .eeprom        0x00810000        0x1 i2c_register.o
+                0x00810000                data
+                0x00810001                __eeprom_end = .
+
+.fuse           0x00820000        0xa
+ *(.fuse)
+ .fuse          0x00820000        0xa main.o
+                0x00820000                __fuse
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 atmel_start.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 Configuration.o
+ .comment       0x00000030       0x31 driver_isr.o
+ .comment       0x00000030       0x31 Encoder.o
+ .comment       0x00000030       0x31 i2c_register.o
+ .comment       0x00000030       0x31 main.o
+ .comment       0x00000030       0x31 src/bod.o
+ .comment       0x00000030       0x31 src/clkctrl.o
+ .comment       0x00000030       0x31 src/cpuint.o
+ .comment       0x00000030       0x31 src/driver_init.o
+ .comment       0x00000030       0x31 src/evsys.o
+ .comment       0x00000030       0x31 src/i2c_slave.o
+ .comment       0x00000030       0x31 src/nvmctrl_basic.o
+ .comment       0x00000030       0x31 src/slpctrl.o
+ .comment       0x00000030       0x31 src/tca.o
+ .comment       0x00000030       0x31 src/tcb.o
+ .comment       0x00000030       0x31 src/wdt.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x3c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 src/protected_io.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x1257
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x11d6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+ .debug_info    0x000011d6       0x81 src/protected_io.o
+
+.debug_abbrev   0x00000000     0x10f2
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000     0x10de C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+ .debug_abbrev  0x000010de       0x14 src/protected_io.o
+
+.debug_line     0x00000000      0x18b
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x136 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+ .debug_line    0x00000136       0x55 src/protected_io.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x00000000      0x7a9
+ *(.debug_str)
+ .debug_str     0x00000000      0x7a9 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(I2CEncoderMini.elf elf32-avr)
+LOAD linker stubs
