@@ -3,29 +3,29 @@ I2CEncoderMini.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000004  00803f00  00000f90  00001064  2**0
+  0 .data         00000004  00803f00  00000f86  0000105a  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         00000f90  00000000  00000000  000000d4  2**1
+  1 .text         00000f86  00000000  00000000  000000d4  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .bss          00000038  00803f04  00803f04  00001068  2**0
+  2 .bss          00000038  00803f04  00803f04  0000105e  2**0
                   ALLOC
-  3 .eeprom       00000001  00810000  00810000  00001068  2**0
+  3 .eeprom       00000001  00810000  00810000  0000105e  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  4 .fuse         0000000a  00820000  00820000  00001069  2**0
+  4 .fuse         0000000a  00820000  00820000  0000105f  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  5 .comment      00000030  00000000  00000000  00001073  2**0
+  5 .comment      00000030  00000000  00000000  00001069  2**0
                   CONTENTS, READONLY
-  6 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000010a4  2**2
+  6 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000109c  2**2
                   CONTENTS, READONLY
-  7 .debug_aranges 00000020  00000000  00000000  000010e0  2**3
+  7 .debug_aranges 00000020  00000000  00000000  000010d8  2**3
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_info   00001257  00000000  00000000  00001100  2**0
+  8 .debug_info   00001264  00000000  00000000  000010f8  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_abbrev 000010f2  00000000  00000000  00002357  2**0
+  9 .debug_abbrev 000010f2  00000000  00000000  0000235c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_line   0000018b  00000000  00000000  00003449  2**0
+ 10 .debug_line   0000018b  00000000  00000000  0000344e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_str    000007a9  00000000  00000000  000035d4  2**0
+ 11 .debug_str    000007a9  00000000  00000000  000035d9  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -50,7 +50,7 @@ Disassembly of section .text:
   20:	11 c1       	rjmp	.+546    	; 0x244 <__bad_interrupt>
   22:	10 c1       	rjmp	.+544    	; 0x244 <__bad_interrupt>
   24:	0f c1       	rjmp	.+542    	; 0x244 <__bad_interrupt>
-  26:	bc c6       	rjmp	.+3448   	; 0xda0 <__vector_19>
+  26:	b7 c6       	rjmp	.+3438   	; 0xd96 <__vector_19>
   28:	0d c1       	rjmp	.+538    	; 0x244 <__bad_interrupt>
   2a:	0c c1       	rjmp	.+536    	; 0x244 <__bad_interrupt>
   2c:	0b c1       	rjmp	.+534    	; 0x244 <__bad_interrupt>
@@ -64,26 +64,26 @@ Disassembly of section .text:
   3c:	9a c3       	rjmp	.+1844   	; 0x772 <Encoder_PushButton_FSM+0xda>
   3e:	3a c3       	rjmp	.+1652   	; 0x6b4 <Encoder_PushButton_FSM+0x1c>
   40:	bf c3       	rjmp	.+1918   	; 0x7c0 <Encoder_PushButton_FSM+0x128>
-  42:	dc c4       	rjmp	.+2488   	; 0x9fc <I2C_read_handler+0x108>
-  44:	d7 c4       	rjmp	.+2478   	; 0x9f4 <I2C_read_handler+0x100>
-  46:	d1 c4       	rjmp	.+2466   	; 0x9ea <I2C_read_handler+0xf6>
-  48:	cc c4       	rjmp	.+2456   	; 0x9e2 <I2C_read_handler+0xee>
-  4a:	c7 c4       	rjmp	.+2446   	; 0x9da <I2C_read_handler+0xe6>
-  4c:	c2 c4       	rjmp	.+2436   	; 0x9d2 <I2C_read_handler+0xde>
-  4e:	bd c4       	rjmp	.+2426   	; 0x9ca <I2C_read_handler+0xd6>
-  50:	b8 c4       	rjmp	.+2416   	; 0x9c2 <I2C_read_handler+0xce>
-  52:	b3 c4       	rjmp	.+2406   	; 0x9ba <I2C_read_handler+0xc6>
-  54:	ae c4       	rjmp	.+2396   	; 0x9b2 <I2C_read_handler+0xbe>
-  56:	a9 c4       	rjmp	.+2386   	; 0x9aa <I2C_read_handler+0xb6>
-  58:	a4 c4       	rjmp	.+2376   	; 0x9a2 <I2C_read_handler+0xae>
-  5a:	9f c4       	rjmp	.+2366   	; 0x99a <I2C_read_handler+0xa6>
-  5c:	9a c4       	rjmp	.+2356   	; 0x992 <I2C_read_handler+0x9e>
-  5e:	95 c4       	rjmp	.+2346   	; 0x98a <I2C_read_handler+0x96>
-  60:	90 c4       	rjmp	.+2336   	; 0x982 <I2C_read_handler+0x8e>
-  62:	8b c4       	rjmp	.+2326   	; 0x97a <I2C_read_handler+0x86>
-  64:	86 c4       	rjmp	.+2316   	; 0x972 <I2C_read_handler+0x7e>
-  66:	81 c4       	rjmp	.+2306   	; 0x96a <I2C_read_handler+0x76>
-  68:	7c c4       	rjmp	.+2296   	; 0x962 <I2C_read_handler+0x6e>
+  42:	d9 c4       	rjmp	.+2482   	; 0x9f6 <I2C_read_handler+0x102>
+  44:	d4 c4       	rjmp	.+2472   	; 0x9ee <I2C_read_handler+0xfa>
+  46:	ce c4       	rjmp	.+2460   	; 0x9e4 <I2C_read_handler+0xf0>
+  48:	c9 c4       	rjmp	.+2450   	; 0x9dc <I2C_read_handler+0xe8>
+  4a:	c4 c4       	rjmp	.+2440   	; 0x9d4 <I2C_read_handler+0xe0>
+  4c:	bf c4       	rjmp	.+2430   	; 0x9cc <I2C_read_handler+0xd8>
+  4e:	ba c4       	rjmp	.+2420   	; 0x9c4 <I2C_read_handler+0xd0>
+  50:	b5 c4       	rjmp	.+2410   	; 0x9bc <I2C_read_handler+0xc8>
+  52:	b0 c4       	rjmp	.+2400   	; 0x9b4 <I2C_read_handler+0xc0>
+  54:	ab c4       	rjmp	.+2390   	; 0x9ac <I2C_read_handler+0xb8>
+  56:	a6 c4       	rjmp	.+2380   	; 0x9a4 <I2C_read_handler+0xb0>
+  58:	a1 c4       	rjmp	.+2370   	; 0x99c <I2C_read_handler+0xa8>
+  5a:	9c c4       	rjmp	.+2360   	; 0x994 <I2C_read_handler+0xa0>
+  5c:	97 c4       	rjmp	.+2350   	; 0x98c <I2C_read_handler+0x98>
+  5e:	92 c4       	rjmp	.+2340   	; 0x984 <I2C_read_handler+0x90>
+  60:	8d c4       	rjmp	.+2330   	; 0x97c <I2C_read_handler+0x88>
+  62:	88 c4       	rjmp	.+2320   	; 0x974 <I2C_read_handler+0x80>
+  64:	83 c4       	rjmp	.+2310   	; 0x96c <I2C_read_handler+0x78>
+  66:	7e c4       	rjmp	.+2300   	; 0x964 <I2C_read_handler+0x70>
+  68:	79 c4       	rjmp	.+2290   	; 0x95c <I2C_read_handler+0x68>
   6a:	57 c4       	rjmp	.+2222   	; 0x91a <I2C_read_handler+0x26>
   6c:	56 c4       	rjmp	.+2220   	; 0x91a <I2C_read_handler+0x26>
   6e:	55 c4       	rjmp	.+2218   	; 0x91a <I2C_read_handler+0x26>
@@ -177,123 +177,123 @@ Disassembly of section .text:
  11e:	fd c3       	rjmp	.+2042   	; 0x91a <I2C_read_handler+0x26>
  120:	fc c3       	rjmp	.+2040   	; 0x91a <I2C_read_handler+0x26>
  122:	f9 c3       	rjmp	.+2034   	; 0x916 <I2C_read_handler+0x22>
- 124:	1b c4       	rjmp	.+2102   	; 0x95c <I2C_read_handler+0x68>
- 126:	15 c4       	rjmp	.+2090   	; 0x952 <I2C_read_handler+0x5e>
- 128:	d2 c4       	rjmp	.+2468   	; 0xace <I2C_write_handler+0xca>
- 12a:	d6 c4       	rjmp	.+2476   	; 0xad8 <I2C_write_handler+0xd4>
- 12c:	76 c4       	rjmp	.+2284   	; 0xa1a <I2C_write_handler+0x16>
- 12e:	d8 c4       	rjmp	.+2480   	; 0xae0 <I2C_write_handler+0xdc>
- 130:	db c4       	rjmp	.+2486   	; 0xae8 <I2C_write_handler+0xe4>
- 132:	de c4       	rjmp	.+2492   	; 0xaf0 <I2C_write_handler+0xec>
- 134:	e1 c4       	rjmp	.+2498   	; 0xaf8 <I2C_write_handler+0xf4>
- 136:	e4 c4       	rjmp	.+2504   	; 0xb00 <I2C_write_handler+0xfc>
- 138:	e7 c4       	rjmp	.+2510   	; 0xb08 <I2C_write_handler+0x104>
- 13a:	ea c4       	rjmp	.+2516   	; 0xb10 <I2C_write_handler+0x10c>
- 13c:	ed c4       	rjmp	.+2522   	; 0xb18 <I2C_write_handler+0x114>
- 13e:	f0 c4       	rjmp	.+2528   	; 0xb20 <I2C_write_handler+0x11c>
- 140:	f3 c4       	rjmp	.+2534   	; 0xb28 <I2C_write_handler+0x124>
- 142:	f6 c4       	rjmp	.+2540   	; 0xb30 <I2C_write_handler+0x12c>
- 144:	f9 c4       	rjmp	.+2546   	; 0xb38 <I2C_write_handler+0x134>
- 146:	fc c4       	rjmp	.+2552   	; 0xb40 <I2C_write_handler+0x13c>
- 148:	ff c4       	rjmp	.+2558   	; 0xb48 <I2C_write_handler+0x144>
- 14a:	02 c5       	rjmp	.+2564   	; 0xb50 <I2C_write_handler+0x14c>
- 14c:	05 c5       	rjmp	.+2570   	; 0xb58 <I2C_write_handler+0x154>
- 14e:	08 c5       	rjmp	.+2576   	; 0xb60 <I2C_write_handler+0x15c>
- 150:	64 c4       	rjmp	.+2248   	; 0xa1a <I2C_write_handler+0x16>
- 152:	63 c4       	rjmp	.+2246   	; 0xa1a <I2C_write_handler+0x16>
- 154:	62 c4       	rjmp	.+2244   	; 0xa1a <I2C_write_handler+0x16>
- 156:	61 c4       	rjmp	.+2242   	; 0xa1a <I2C_write_handler+0x16>
- 158:	60 c4       	rjmp	.+2240   	; 0xa1a <I2C_write_handler+0x16>
- 15a:	5f c4       	rjmp	.+2238   	; 0xa1a <I2C_write_handler+0x16>
- 15c:	5e c4       	rjmp	.+2236   	; 0xa1a <I2C_write_handler+0x16>
- 15e:	5d c4       	rjmp	.+2234   	; 0xa1a <I2C_write_handler+0x16>
- 160:	5c c4       	rjmp	.+2232   	; 0xa1a <I2C_write_handler+0x16>
- 162:	5b c4       	rjmp	.+2230   	; 0xa1a <I2C_write_handler+0x16>
- 164:	5a c4       	rjmp	.+2228   	; 0xa1a <I2C_write_handler+0x16>
- 166:	59 c4       	rjmp	.+2226   	; 0xa1a <I2C_write_handler+0x16>
- 168:	58 c4       	rjmp	.+2224   	; 0xa1a <I2C_write_handler+0x16>
- 16a:	57 c4       	rjmp	.+2222   	; 0xa1a <I2C_write_handler+0x16>
- 16c:	56 c4       	rjmp	.+2220   	; 0xa1a <I2C_write_handler+0x16>
- 16e:	55 c4       	rjmp	.+2218   	; 0xa1a <I2C_write_handler+0x16>
- 170:	54 c4       	rjmp	.+2216   	; 0xa1a <I2C_write_handler+0x16>
- 172:	53 c4       	rjmp	.+2214   	; 0xa1a <I2C_write_handler+0x16>
- 174:	52 c4       	rjmp	.+2212   	; 0xa1a <I2C_write_handler+0x16>
- 176:	51 c4       	rjmp	.+2210   	; 0xa1a <I2C_write_handler+0x16>
- 178:	50 c4       	rjmp	.+2208   	; 0xa1a <I2C_write_handler+0x16>
- 17a:	4f c4       	rjmp	.+2206   	; 0xa1a <I2C_write_handler+0x16>
- 17c:	4e c4       	rjmp	.+2204   	; 0xa1a <I2C_write_handler+0x16>
- 17e:	4d c4       	rjmp	.+2202   	; 0xa1a <I2C_write_handler+0x16>
- 180:	4c c4       	rjmp	.+2200   	; 0xa1a <I2C_write_handler+0x16>
- 182:	4b c4       	rjmp	.+2198   	; 0xa1a <I2C_write_handler+0x16>
- 184:	4a c4       	rjmp	.+2196   	; 0xa1a <I2C_write_handler+0x16>
- 186:	49 c4       	rjmp	.+2194   	; 0xa1a <I2C_write_handler+0x16>
- 188:	48 c4       	rjmp	.+2192   	; 0xa1a <I2C_write_handler+0x16>
- 18a:	47 c4       	rjmp	.+2190   	; 0xa1a <I2C_write_handler+0x16>
- 18c:	46 c4       	rjmp	.+2188   	; 0xa1a <I2C_write_handler+0x16>
- 18e:	45 c4       	rjmp	.+2186   	; 0xa1a <I2C_write_handler+0x16>
- 190:	44 c4       	rjmp	.+2184   	; 0xa1a <I2C_write_handler+0x16>
- 192:	43 c4       	rjmp	.+2182   	; 0xa1a <I2C_write_handler+0x16>
- 194:	42 c4       	rjmp	.+2180   	; 0xa1a <I2C_write_handler+0x16>
- 196:	41 c4       	rjmp	.+2178   	; 0xa1a <I2C_write_handler+0x16>
- 198:	40 c4       	rjmp	.+2176   	; 0xa1a <I2C_write_handler+0x16>
- 19a:	3f c4       	rjmp	.+2174   	; 0xa1a <I2C_write_handler+0x16>
- 19c:	3e c4       	rjmp	.+2172   	; 0xa1a <I2C_write_handler+0x16>
- 19e:	3d c4       	rjmp	.+2170   	; 0xa1a <I2C_write_handler+0x16>
- 1a0:	3c c4       	rjmp	.+2168   	; 0xa1a <I2C_write_handler+0x16>
- 1a2:	3b c4       	rjmp	.+2166   	; 0xa1a <I2C_write_handler+0x16>
- 1a4:	3a c4       	rjmp	.+2164   	; 0xa1a <I2C_write_handler+0x16>
- 1a6:	39 c4       	rjmp	.+2162   	; 0xa1a <I2C_write_handler+0x16>
- 1a8:	38 c4       	rjmp	.+2160   	; 0xa1a <I2C_write_handler+0x16>
- 1aa:	37 c4       	rjmp	.+2158   	; 0xa1a <I2C_write_handler+0x16>
- 1ac:	36 c4       	rjmp	.+2156   	; 0xa1a <I2C_write_handler+0x16>
- 1ae:	35 c4       	rjmp	.+2154   	; 0xa1a <I2C_write_handler+0x16>
- 1b0:	34 c4       	rjmp	.+2152   	; 0xa1a <I2C_write_handler+0x16>
- 1b2:	33 c4       	rjmp	.+2150   	; 0xa1a <I2C_write_handler+0x16>
- 1b4:	32 c4       	rjmp	.+2148   	; 0xa1a <I2C_write_handler+0x16>
- 1b6:	31 c4       	rjmp	.+2146   	; 0xa1a <I2C_write_handler+0x16>
- 1b8:	30 c4       	rjmp	.+2144   	; 0xa1a <I2C_write_handler+0x16>
- 1ba:	2f c4       	rjmp	.+2142   	; 0xa1a <I2C_write_handler+0x16>
- 1bc:	2e c4       	rjmp	.+2140   	; 0xa1a <I2C_write_handler+0x16>
- 1be:	2d c4       	rjmp	.+2138   	; 0xa1a <I2C_write_handler+0x16>
- 1c0:	2c c4       	rjmp	.+2136   	; 0xa1a <I2C_write_handler+0x16>
- 1c2:	2b c4       	rjmp	.+2134   	; 0xa1a <I2C_write_handler+0x16>
- 1c4:	2a c4       	rjmp	.+2132   	; 0xa1a <I2C_write_handler+0x16>
- 1c6:	29 c4       	rjmp	.+2130   	; 0xa1a <I2C_write_handler+0x16>
- 1c8:	28 c4       	rjmp	.+2128   	; 0xa1a <I2C_write_handler+0x16>
- 1ca:	27 c4       	rjmp	.+2126   	; 0xa1a <I2C_write_handler+0x16>
- 1cc:	26 c4       	rjmp	.+2124   	; 0xa1a <I2C_write_handler+0x16>
- 1ce:	25 c4       	rjmp	.+2122   	; 0xa1a <I2C_write_handler+0x16>
- 1d0:	24 c4       	rjmp	.+2120   	; 0xa1a <I2C_write_handler+0x16>
- 1d2:	23 c4       	rjmp	.+2118   	; 0xa1a <I2C_write_handler+0x16>
- 1d4:	22 c4       	rjmp	.+2116   	; 0xa1a <I2C_write_handler+0x16>
- 1d6:	21 c4       	rjmp	.+2114   	; 0xa1a <I2C_write_handler+0x16>
- 1d8:	20 c4       	rjmp	.+2112   	; 0xa1a <I2C_write_handler+0x16>
- 1da:	1f c4       	rjmp	.+2110   	; 0xa1a <I2C_write_handler+0x16>
- 1dc:	1e c4       	rjmp	.+2108   	; 0xa1a <I2C_write_handler+0x16>
- 1de:	1d c4       	rjmp	.+2106   	; 0xa1a <I2C_write_handler+0x16>
- 1e0:	1c c4       	rjmp	.+2104   	; 0xa1a <I2C_write_handler+0x16>
- 1e2:	1b c4       	rjmp	.+2102   	; 0xa1a <I2C_write_handler+0x16>
- 1e4:	1a c4       	rjmp	.+2100   	; 0xa1a <I2C_write_handler+0x16>
- 1e6:	19 c4       	rjmp	.+2098   	; 0xa1a <I2C_write_handler+0x16>
- 1e8:	18 c4       	rjmp	.+2096   	; 0xa1a <I2C_write_handler+0x16>
- 1ea:	17 c4       	rjmp	.+2094   	; 0xa1a <I2C_write_handler+0x16>
- 1ec:	16 c4       	rjmp	.+2092   	; 0xa1a <I2C_write_handler+0x16>
- 1ee:	15 c4       	rjmp	.+2090   	; 0xa1a <I2C_write_handler+0x16>
- 1f0:	14 c4       	rjmp	.+2088   	; 0xa1a <I2C_write_handler+0x16>
- 1f2:	13 c4       	rjmp	.+2086   	; 0xa1a <I2C_write_handler+0x16>
- 1f4:	12 c4       	rjmp	.+2084   	; 0xa1a <I2C_write_handler+0x16>
- 1f6:	11 c4       	rjmp	.+2082   	; 0xa1a <I2C_write_handler+0x16>
- 1f8:	10 c4       	rjmp	.+2080   	; 0xa1a <I2C_write_handler+0x16>
- 1fa:	0f c4       	rjmp	.+2078   	; 0xa1a <I2C_write_handler+0x16>
- 1fc:	0e c4       	rjmp	.+2076   	; 0xa1a <I2C_write_handler+0x16>
- 1fe:	0d c4       	rjmp	.+2074   	; 0xa1a <I2C_write_handler+0x16>
- 200:	0c c4       	rjmp	.+2072   	; 0xa1a <I2C_write_handler+0x16>
- 202:	0b c4       	rjmp	.+2070   	; 0xa1a <I2C_write_handler+0x16>
- 204:	0a c4       	rjmp	.+2068   	; 0xa1a <I2C_write_handler+0x16>
- 206:	09 c4       	rjmp	.+2066   	; 0xa1a <I2C_write_handler+0x16>
- 208:	08 c4       	rjmp	.+2064   	; 0xa1a <I2C_write_handler+0x16>
- 20a:	07 c4       	rjmp	.+2062   	; 0xa1a <I2C_write_handler+0x16>
- 20c:	30 c4       	rjmp	.+2144   	; 0xa6e <I2C_write_handler+0x6a>
+ 124:	18 c4       	rjmp	.+2096   	; 0x956 <I2C_read_handler+0x62>
+ 126:	12 c4       	rjmp	.+2084   	; 0x94c <I2C_read_handler+0x58>
+ 128:	cd c4       	rjmp	.+2458   	; 0xac4 <I2C_write_handler+0xc6>
+ 12a:	d1 c4       	rjmp	.+2466   	; 0xace <I2C_write_handler+0xd0>
+ 12c:	73 c4       	rjmp	.+2278   	; 0xa14 <I2C_write_handler+0x16>
+ 12e:	d3 c4       	rjmp	.+2470   	; 0xad6 <I2C_write_handler+0xd8>
+ 130:	d6 c4       	rjmp	.+2476   	; 0xade <I2C_write_handler+0xe0>
+ 132:	d9 c4       	rjmp	.+2482   	; 0xae6 <I2C_write_handler+0xe8>
+ 134:	dc c4       	rjmp	.+2488   	; 0xaee <I2C_write_handler+0xf0>
+ 136:	df c4       	rjmp	.+2494   	; 0xaf6 <I2C_write_handler+0xf8>
+ 138:	e2 c4       	rjmp	.+2500   	; 0xafe <I2C_write_handler+0x100>
+ 13a:	e5 c4       	rjmp	.+2506   	; 0xb06 <I2C_write_handler+0x108>
+ 13c:	e8 c4       	rjmp	.+2512   	; 0xb0e <I2C_write_handler+0x110>
+ 13e:	eb c4       	rjmp	.+2518   	; 0xb16 <I2C_write_handler+0x118>
+ 140:	ee c4       	rjmp	.+2524   	; 0xb1e <I2C_write_handler+0x120>
+ 142:	f1 c4       	rjmp	.+2530   	; 0xb26 <I2C_write_handler+0x128>
+ 144:	f4 c4       	rjmp	.+2536   	; 0xb2e <I2C_write_handler+0x130>
+ 146:	f7 c4       	rjmp	.+2542   	; 0xb36 <I2C_write_handler+0x138>
+ 148:	fa c4       	rjmp	.+2548   	; 0xb3e <I2C_write_handler+0x140>
+ 14a:	fd c4       	rjmp	.+2554   	; 0xb46 <I2C_write_handler+0x148>
+ 14c:	00 c5       	rjmp	.+2560   	; 0xb4e <I2C_write_handler+0x150>
+ 14e:	03 c5       	rjmp	.+2566   	; 0xb56 <I2C_write_handler+0x158>
+ 150:	61 c4       	rjmp	.+2242   	; 0xa14 <I2C_write_handler+0x16>
+ 152:	60 c4       	rjmp	.+2240   	; 0xa14 <I2C_write_handler+0x16>
+ 154:	5f c4       	rjmp	.+2238   	; 0xa14 <I2C_write_handler+0x16>
+ 156:	5e c4       	rjmp	.+2236   	; 0xa14 <I2C_write_handler+0x16>
+ 158:	5d c4       	rjmp	.+2234   	; 0xa14 <I2C_write_handler+0x16>
+ 15a:	5c c4       	rjmp	.+2232   	; 0xa14 <I2C_write_handler+0x16>
+ 15c:	5b c4       	rjmp	.+2230   	; 0xa14 <I2C_write_handler+0x16>
+ 15e:	5a c4       	rjmp	.+2228   	; 0xa14 <I2C_write_handler+0x16>
+ 160:	59 c4       	rjmp	.+2226   	; 0xa14 <I2C_write_handler+0x16>
+ 162:	58 c4       	rjmp	.+2224   	; 0xa14 <I2C_write_handler+0x16>
+ 164:	57 c4       	rjmp	.+2222   	; 0xa14 <I2C_write_handler+0x16>
+ 166:	56 c4       	rjmp	.+2220   	; 0xa14 <I2C_write_handler+0x16>
+ 168:	55 c4       	rjmp	.+2218   	; 0xa14 <I2C_write_handler+0x16>
+ 16a:	54 c4       	rjmp	.+2216   	; 0xa14 <I2C_write_handler+0x16>
+ 16c:	53 c4       	rjmp	.+2214   	; 0xa14 <I2C_write_handler+0x16>
+ 16e:	52 c4       	rjmp	.+2212   	; 0xa14 <I2C_write_handler+0x16>
+ 170:	51 c4       	rjmp	.+2210   	; 0xa14 <I2C_write_handler+0x16>
+ 172:	50 c4       	rjmp	.+2208   	; 0xa14 <I2C_write_handler+0x16>
+ 174:	4f c4       	rjmp	.+2206   	; 0xa14 <I2C_write_handler+0x16>
+ 176:	4e c4       	rjmp	.+2204   	; 0xa14 <I2C_write_handler+0x16>
+ 178:	4d c4       	rjmp	.+2202   	; 0xa14 <I2C_write_handler+0x16>
+ 17a:	4c c4       	rjmp	.+2200   	; 0xa14 <I2C_write_handler+0x16>
+ 17c:	4b c4       	rjmp	.+2198   	; 0xa14 <I2C_write_handler+0x16>
+ 17e:	4a c4       	rjmp	.+2196   	; 0xa14 <I2C_write_handler+0x16>
+ 180:	49 c4       	rjmp	.+2194   	; 0xa14 <I2C_write_handler+0x16>
+ 182:	48 c4       	rjmp	.+2192   	; 0xa14 <I2C_write_handler+0x16>
+ 184:	47 c4       	rjmp	.+2190   	; 0xa14 <I2C_write_handler+0x16>
+ 186:	46 c4       	rjmp	.+2188   	; 0xa14 <I2C_write_handler+0x16>
+ 188:	45 c4       	rjmp	.+2186   	; 0xa14 <I2C_write_handler+0x16>
+ 18a:	44 c4       	rjmp	.+2184   	; 0xa14 <I2C_write_handler+0x16>
+ 18c:	43 c4       	rjmp	.+2182   	; 0xa14 <I2C_write_handler+0x16>
+ 18e:	42 c4       	rjmp	.+2180   	; 0xa14 <I2C_write_handler+0x16>
+ 190:	41 c4       	rjmp	.+2178   	; 0xa14 <I2C_write_handler+0x16>
+ 192:	40 c4       	rjmp	.+2176   	; 0xa14 <I2C_write_handler+0x16>
+ 194:	3f c4       	rjmp	.+2174   	; 0xa14 <I2C_write_handler+0x16>
+ 196:	3e c4       	rjmp	.+2172   	; 0xa14 <I2C_write_handler+0x16>
+ 198:	3d c4       	rjmp	.+2170   	; 0xa14 <I2C_write_handler+0x16>
+ 19a:	3c c4       	rjmp	.+2168   	; 0xa14 <I2C_write_handler+0x16>
+ 19c:	3b c4       	rjmp	.+2166   	; 0xa14 <I2C_write_handler+0x16>
+ 19e:	3a c4       	rjmp	.+2164   	; 0xa14 <I2C_write_handler+0x16>
+ 1a0:	39 c4       	rjmp	.+2162   	; 0xa14 <I2C_write_handler+0x16>
+ 1a2:	38 c4       	rjmp	.+2160   	; 0xa14 <I2C_write_handler+0x16>
+ 1a4:	37 c4       	rjmp	.+2158   	; 0xa14 <I2C_write_handler+0x16>
+ 1a6:	36 c4       	rjmp	.+2156   	; 0xa14 <I2C_write_handler+0x16>
+ 1a8:	35 c4       	rjmp	.+2154   	; 0xa14 <I2C_write_handler+0x16>
+ 1aa:	34 c4       	rjmp	.+2152   	; 0xa14 <I2C_write_handler+0x16>
+ 1ac:	33 c4       	rjmp	.+2150   	; 0xa14 <I2C_write_handler+0x16>
+ 1ae:	32 c4       	rjmp	.+2148   	; 0xa14 <I2C_write_handler+0x16>
+ 1b0:	31 c4       	rjmp	.+2146   	; 0xa14 <I2C_write_handler+0x16>
+ 1b2:	30 c4       	rjmp	.+2144   	; 0xa14 <I2C_write_handler+0x16>
+ 1b4:	2f c4       	rjmp	.+2142   	; 0xa14 <I2C_write_handler+0x16>
+ 1b6:	2e c4       	rjmp	.+2140   	; 0xa14 <I2C_write_handler+0x16>
+ 1b8:	2d c4       	rjmp	.+2138   	; 0xa14 <I2C_write_handler+0x16>
+ 1ba:	2c c4       	rjmp	.+2136   	; 0xa14 <I2C_write_handler+0x16>
+ 1bc:	2b c4       	rjmp	.+2134   	; 0xa14 <I2C_write_handler+0x16>
+ 1be:	2a c4       	rjmp	.+2132   	; 0xa14 <I2C_write_handler+0x16>
+ 1c0:	29 c4       	rjmp	.+2130   	; 0xa14 <I2C_write_handler+0x16>
+ 1c2:	28 c4       	rjmp	.+2128   	; 0xa14 <I2C_write_handler+0x16>
+ 1c4:	27 c4       	rjmp	.+2126   	; 0xa14 <I2C_write_handler+0x16>
+ 1c6:	26 c4       	rjmp	.+2124   	; 0xa14 <I2C_write_handler+0x16>
+ 1c8:	25 c4       	rjmp	.+2122   	; 0xa14 <I2C_write_handler+0x16>
+ 1ca:	24 c4       	rjmp	.+2120   	; 0xa14 <I2C_write_handler+0x16>
+ 1cc:	23 c4       	rjmp	.+2118   	; 0xa14 <I2C_write_handler+0x16>
+ 1ce:	22 c4       	rjmp	.+2116   	; 0xa14 <I2C_write_handler+0x16>
+ 1d0:	21 c4       	rjmp	.+2114   	; 0xa14 <I2C_write_handler+0x16>
+ 1d2:	20 c4       	rjmp	.+2112   	; 0xa14 <I2C_write_handler+0x16>
+ 1d4:	1f c4       	rjmp	.+2110   	; 0xa14 <I2C_write_handler+0x16>
+ 1d6:	1e c4       	rjmp	.+2108   	; 0xa14 <I2C_write_handler+0x16>
+ 1d8:	1d c4       	rjmp	.+2106   	; 0xa14 <I2C_write_handler+0x16>
+ 1da:	1c c4       	rjmp	.+2104   	; 0xa14 <I2C_write_handler+0x16>
+ 1dc:	1b c4       	rjmp	.+2102   	; 0xa14 <I2C_write_handler+0x16>
+ 1de:	1a c4       	rjmp	.+2100   	; 0xa14 <I2C_write_handler+0x16>
+ 1e0:	19 c4       	rjmp	.+2098   	; 0xa14 <I2C_write_handler+0x16>
+ 1e2:	18 c4       	rjmp	.+2096   	; 0xa14 <I2C_write_handler+0x16>
+ 1e4:	17 c4       	rjmp	.+2094   	; 0xa14 <I2C_write_handler+0x16>
+ 1e6:	16 c4       	rjmp	.+2092   	; 0xa14 <I2C_write_handler+0x16>
+ 1e8:	15 c4       	rjmp	.+2090   	; 0xa14 <I2C_write_handler+0x16>
+ 1ea:	14 c4       	rjmp	.+2088   	; 0xa14 <I2C_write_handler+0x16>
+ 1ec:	13 c4       	rjmp	.+2086   	; 0xa14 <I2C_write_handler+0x16>
+ 1ee:	12 c4       	rjmp	.+2084   	; 0xa14 <I2C_write_handler+0x16>
+ 1f0:	11 c4       	rjmp	.+2082   	; 0xa14 <I2C_write_handler+0x16>
+ 1f2:	10 c4       	rjmp	.+2080   	; 0xa14 <I2C_write_handler+0x16>
+ 1f4:	0f c4       	rjmp	.+2078   	; 0xa14 <I2C_write_handler+0x16>
+ 1f6:	0e c4       	rjmp	.+2076   	; 0xa14 <I2C_write_handler+0x16>
+ 1f8:	0d c4       	rjmp	.+2074   	; 0xa14 <I2C_write_handler+0x16>
+ 1fa:	0c c4       	rjmp	.+2072   	; 0xa14 <I2C_write_handler+0x16>
+ 1fc:	0b c4       	rjmp	.+2070   	; 0xa14 <I2C_write_handler+0x16>
+ 1fe:	0a c4       	rjmp	.+2068   	; 0xa14 <I2C_write_handler+0x16>
+ 200:	09 c4       	rjmp	.+2066   	; 0xa14 <I2C_write_handler+0x16>
+ 202:	08 c4       	rjmp	.+2064   	; 0xa14 <I2C_write_handler+0x16>
+ 204:	07 c4       	rjmp	.+2062   	; 0xa14 <I2C_write_handler+0x16>
+ 206:	06 c4       	rjmp	.+2060   	; 0xa14 <I2C_write_handler+0x16>
+ 208:	05 c4       	rjmp	.+2058   	; 0xa14 <I2C_write_handler+0x16>
+ 20a:	04 c4       	rjmp	.+2056   	; 0xa14 <I2C_write_handler+0x16>
+ 20c:	2b c4       	rjmp	.+2134   	; 0xa64 <I2C_write_handler+0x66>
 
 0000020e <__ctors_end>:
  20e:	11 24       	eor	r1, r1
@@ -307,7 +307,7 @@ Disassembly of section .text:
  21a:	1f e3       	ldi	r17, 0x3F	; 63
  21c:	a0 e0       	ldi	r26, 0x00	; 0
  21e:	bf e3       	ldi	r27, 0x3F	; 63
- 220:	e0 e9       	ldi	r30, 0x90	; 144
+ 220:	e6 e8       	ldi	r30, 0x86	; 134
  222:	ff e0       	ldi	r31, 0x0F	; 15
  224:	02 c0       	rjmp	.+4      	; 0x22a <__do_copy_data+0x10>
  226:	05 90       	lpm	r0, Z+
@@ -329,14 +329,14 @@ Disassembly of section .text:
  23a:	ac 33       	cpi	r26, 0x3C	; 60
  23c:	b2 07       	cpc	r27, r18
  23e:	e1 f7       	brne	.-8      	; 0x238 <.do_clear_bss_loop>
- 240:	e6 d4       	rcall	.+2508   	; 0xc0e <main>
- 242:	a4 c6       	rjmp	.+3400   	; 0xf8c <_exit>
+ 240:	e1 d4       	rcall	.+2498   	; 0xc04 <main>
+ 242:	9f c6       	rjmp	.+3390   	; 0xf82 <_exit>
 
 00000244 <__bad_interrupt>:
  244:	dd ce       	rjmp	.-582    	; 0x0 <__vectors>
 
 00000246 <atmel_start_init>:
- 246:	fc c4       	rjmp	.+2552   	; 0xc40 <system_init>
+ 246:	f7 c4       	rjmp	.+2542   	; 0xc36 <system_init>
 
 00000248 <Gconf_process>:
  248:	80 91 1e 3f 	lds	r24, 0x3F1E	; 0x803f1e <GCONF>
@@ -473,7 +473,7 @@ Disassembly of section .text:
  3a2:	bf 93       	push	r27
  3a4:	ef 93       	push	r30
  3a6:	ff 93       	push	r31
- 3a8:	2e d4       	rcall	.+2140   	; 0xc06 <SystemTimer>
+ 3a8:	29 d4       	rcall	.+2130   	; 0xbfc <SystemTimer>
  3aa:	81 e0       	ldi	r24, 0x01	; 1
  3ac:	80 93 0b 0a 	sts	0x0A0B, r24	; 0x800a0b <__RODATA_PM_OFFSET__+0x7f8a0b>
  3b0:	ff 91       	pop	r31
@@ -991,7 +991,7 @@ Disassembly of section .text:
 
 000008ee <I2C_address_handler>:
  8ee:	10 92 29 3f 	sts	0x3F29, r1	; 0x803f29 <data_type>
- 8f2:	ec c2       	rjmp	.+1496   	; 0xecc <I2C_send_ack>
+ 8f2:	e7 c2       	rjmp	.+1486   	; 0xec2 <I2C_send_ack>
 
 000008f4 <I2C_read_handler>:
  8f4:	cf 93       	push	r28
@@ -1013,747 +1013,742 @@ Disassembly of section .text:
  916:	89 e3       	ldi	r24, 0x39	; 57
  918:	89 83       	std	Y+1, r24	; 0x01
  91a:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
- 91e:	87 fd       	sbrc	r24, 7
- 920:	0c c0       	rjmp	.+24     	; 0x93a <I2C_read_handler+0x46>
- 922:	89 81       	ldd	r24, Y+1	; 0x01
- 924:	cc d2       	rcall	.+1432   	; 0xebe <I2C_write>
- 926:	d2 d2       	rcall	.+1444   	; 0xecc <I2C_send_ack>
- 928:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
- 92c:	8f 5f       	subi	r24, 0xFF	; 255
- 92e:	80 93 0c 3f 	sts	0x3F0C, r24	; 0x803f0c <register_address>
- 932:	0f 90       	pop	r0
- 934:	df 91       	pop	r29
- 936:	cf 91       	pop	r28
- 938:	08 95       	ret
+ 91e:	81 38       	cpi	r24, 0x81	; 129
+ 920:	48 f0       	brcs	.+18     	; 0x934 <I2C_read_handler+0x40>
+ 922:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
+ 926:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
+ 92a:	90 e0       	ldi	r25, 0x00	; 0
+ 92c:	80 58       	subi	r24, 0x80	; 128
+ 92e:	91 09       	sbc	r25, r1
+ 930:	e7 d2       	rcall	.+1486   	; 0xf00 <FLASH_0_read_eeprom_byte>
+ 932:	89 83       	std	Y+1, r24	; 0x01
+ 934:	89 81       	ldd	r24, Y+1	; 0x01
+ 936:	be d2       	rcall	.+1404   	; 0xeb4 <I2C_write>
+ 938:	c4 d2       	rcall	.+1416   	; 0xec2 <I2C_send_ack>
  93a:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
- 93e:	8f 3f       	cpi	r24, 0xFF	; 255
- 940:	81 f3       	breq	.-32     	; 0x922 <I2C_read_handler+0x2e>
- 942:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
- 946:	90 e0       	ldi	r25, 0x00	; 0
- 948:	8f 57       	subi	r24, 0x7F	; 127
- 94a:	91 09       	sbc	r25, r1
- 94c:	de d2       	rcall	.+1468   	; 0xf0a <FLASH_0_read_eeprom_byte>
- 94e:	89 83       	std	Y+1, r24	; 0x01
- 950:	e8 cf       	rjmp	.-48     	; 0x922 <I2C_read_handler+0x2e>
- 952:	80 e0       	ldi	r24, 0x00	; 0
- 954:	90 e0       	ldi	r25, 0x00	; 0
- 956:	d9 d2       	rcall	.+1458   	; 0xf0a <FLASH_0_read_eeprom_byte>
+ 93e:	8f 5f       	subi	r24, 0xFF	; 255
+ 940:	80 93 0c 3f 	sts	0x3F0C, r24	; 0x803f0c <register_address>
+ 944:	0f 90       	pop	r0
+ 946:	df 91       	pop	r29
+ 948:	cf 91       	pop	r28
+ 94a:	08 95       	ret
+ 94c:	80 e0       	ldi	r24, 0x00	; 0
+ 94e:	90 e0       	ldi	r25, 0x00	; 0
+ 950:	d7 d2       	rcall	.+1454   	; 0xf00 <FLASH_0_read_eeprom_byte>
+ 952:	89 83       	std	Y+1, r24	; 0x01
+ 954:	e2 cf       	rjmp	.-60     	; 0x91a <I2C_read_handler+0x26>
+ 956:	80 e1       	ldi	r24, 0x10	; 16
  958:	89 83       	std	Y+1, r24	; 0x01
  95a:	df cf       	rjmp	.-66     	; 0x91a <I2C_read_handler+0x26>
- 95c:	80 e1       	ldi	r24, 0x10	; 16
- 95e:	89 83       	std	Y+1, r24	; 0x01
- 960:	dc cf       	rjmp	.-72     	; 0x91a <I2C_read_handler+0x26>
- 962:	80 91 17 3f 	lds	r24, 0x3F17	; 0x803f17 <DPPERIOD>
- 966:	89 83       	std	Y+1, r24	; 0x01
- 968:	d8 cf       	rjmp	.-80     	; 0x91a <I2C_read_handler+0x26>
- 96a:	80 91 25 3f 	lds	r24, 0x3F25	; 0x803f25 <ISTEP>
- 96e:	89 83       	std	Y+1, r24	; 0x01
- 970:	d4 cf       	rjmp	.-88     	; 0x91a <I2C_read_handler+0x26>
- 972:	80 91 26 3f 	lds	r24, 0x3F26	; 0x803f26 <ISTEP+0x1>
- 976:	89 83       	std	Y+1, r24	; 0x01
- 978:	d0 cf       	rjmp	.-96     	; 0x91a <I2C_read_handler+0x26>
- 97a:	80 91 27 3f 	lds	r24, 0x3F27	; 0x803f27 <ISTEP+0x2>
- 97e:	89 83       	std	Y+1, r24	; 0x01
- 980:	cc cf       	rjmp	.-104    	; 0x91a <I2C_read_handler+0x26>
- 982:	80 91 28 3f 	lds	r24, 0x3F28	; 0x803f28 <ISTEP+0x3>
- 986:	89 83       	std	Y+1, r24	; 0x01
- 988:	c8 cf       	rjmp	.-112    	; 0x91a <I2C_read_handler+0x26>
- 98a:	80 91 21 3f 	lds	r24, 0x3F21	; 0x803f21 <CMIN>
- 98e:	89 83       	std	Y+1, r24	; 0x01
- 990:	c4 cf       	rjmp	.-120    	; 0x91a <I2C_read_handler+0x26>
- 992:	80 91 22 3f 	lds	r24, 0x3F22	; 0x803f22 <CMIN+0x1>
- 996:	89 83       	std	Y+1, r24	; 0x01
- 998:	c0 cf       	rjmp	.-128    	; 0x91a <I2C_read_handler+0x26>
- 99a:	80 91 23 3f 	lds	r24, 0x3F23	; 0x803f23 <CMIN+0x2>
- 99e:	89 83       	std	Y+1, r24	; 0x01
- 9a0:	bc cf       	rjmp	.-136    	; 0x91a <I2C_read_handler+0x26>
- 9a2:	80 91 24 3f 	lds	r24, 0x3F24	; 0x803f24 <CMIN+0x3>
- 9a6:	89 83       	std	Y+1, r24	; 0x01
- 9a8:	b8 cf       	rjmp	.-144    	; 0x91a <I2C_read_handler+0x26>
- 9aa:	80 91 2a 3f 	lds	r24, 0x3F2A	; 0x803f2a <CMAX>
- 9ae:	89 83       	std	Y+1, r24	; 0x01
- 9b0:	b4 cf       	rjmp	.-152    	; 0x91a <I2C_read_handler+0x26>
- 9b2:	80 91 2b 3f 	lds	r24, 0x3F2B	; 0x803f2b <CMAX+0x1>
- 9b6:	89 83       	std	Y+1, r24	; 0x01
- 9b8:	b0 cf       	rjmp	.-160    	; 0x91a <I2C_read_handler+0x26>
- 9ba:	80 91 2c 3f 	lds	r24, 0x3F2C	; 0x803f2c <CMAX+0x2>
- 9be:	89 83       	std	Y+1, r24	; 0x01
- 9c0:	ac cf       	rjmp	.-168    	; 0x91a <I2C_read_handler+0x26>
- 9c2:	80 91 2d 3f 	lds	r24, 0x3F2D	; 0x803f2d <CMAX+0x3>
- 9c6:	89 83       	std	Y+1, r24	; 0x01
- 9c8:	a8 cf       	rjmp	.-176    	; 0x91a <I2C_read_handler+0x26>
- 9ca:	80 91 1a 3f 	lds	r24, 0x3F1A	; 0x803f1a <CVAL>
- 9ce:	89 83       	std	Y+1, r24	; 0x01
- 9d0:	a4 cf       	rjmp	.-184    	; 0x91a <I2C_read_handler+0x26>
- 9d2:	80 91 1b 3f 	lds	r24, 0x3F1B	; 0x803f1b <CVAL+0x1>
- 9d6:	89 83       	std	Y+1, r24	; 0x01
- 9d8:	a0 cf       	rjmp	.-192    	; 0x91a <I2C_read_handler+0x26>
- 9da:	80 91 1c 3f 	lds	r24, 0x3F1C	; 0x803f1c <CVAL+0x2>
- 9de:	89 83       	std	Y+1, r24	; 0x01
- 9e0:	9c cf       	rjmp	.-200    	; 0x91a <I2C_read_handler+0x26>
- 9e2:	80 91 1d 3f 	lds	r24, 0x3F1D	; 0x803f1d <CVAL+0x3>
- 9e6:	89 83       	std	Y+1, r24	; 0x01
- 9e8:	98 cf       	rjmp	.-208    	; 0x91a <I2C_read_handler+0x26>
- 9ea:	80 91 2e 3f 	lds	r24, 0x3F2E	; 0x803f2e <ESTATUS>
- 9ee:	89 83       	std	Y+1, r24	; 0x01
- 9f0:	b7 dc       	rcall	.-1682   	; 0x360 <Ext_Int_Reset>
- 9f2:	93 cf       	rjmp	.-218    	; 0x91a <I2C_read_handler+0x26>
- 9f4:	80 91 19 3f 	lds	r24, 0x3F19	; 0x803f19 <INTCONF>
- 9f8:	89 83       	std	Y+1, r24	; 0x01
- 9fa:	8f cf       	rjmp	.-226    	; 0x91a <I2C_read_handler+0x26>
- 9fc:	80 91 1e 3f 	lds	r24, 0x3F1E	; 0x803f1e <GCONF>
- a00:	89 83       	std	Y+1, r24	; 0x01
- a02:	8b cf       	rjmp	.-234    	; 0x91a <I2C_read_handler+0x26>
+ 95c:	80 91 17 3f 	lds	r24, 0x3F17	; 0x803f17 <DPPERIOD>
+ 960:	89 83       	std	Y+1, r24	; 0x01
+ 962:	db cf       	rjmp	.-74     	; 0x91a <I2C_read_handler+0x26>
+ 964:	80 91 25 3f 	lds	r24, 0x3F25	; 0x803f25 <ISTEP>
+ 968:	89 83       	std	Y+1, r24	; 0x01
+ 96a:	d7 cf       	rjmp	.-82     	; 0x91a <I2C_read_handler+0x26>
+ 96c:	80 91 26 3f 	lds	r24, 0x3F26	; 0x803f26 <ISTEP+0x1>
+ 970:	89 83       	std	Y+1, r24	; 0x01
+ 972:	d3 cf       	rjmp	.-90     	; 0x91a <I2C_read_handler+0x26>
+ 974:	80 91 27 3f 	lds	r24, 0x3F27	; 0x803f27 <ISTEP+0x2>
+ 978:	89 83       	std	Y+1, r24	; 0x01
+ 97a:	cf cf       	rjmp	.-98     	; 0x91a <I2C_read_handler+0x26>
+ 97c:	80 91 28 3f 	lds	r24, 0x3F28	; 0x803f28 <ISTEP+0x3>
+ 980:	89 83       	std	Y+1, r24	; 0x01
+ 982:	cb cf       	rjmp	.-106    	; 0x91a <I2C_read_handler+0x26>
+ 984:	80 91 21 3f 	lds	r24, 0x3F21	; 0x803f21 <CMIN>
+ 988:	89 83       	std	Y+1, r24	; 0x01
+ 98a:	c7 cf       	rjmp	.-114    	; 0x91a <I2C_read_handler+0x26>
+ 98c:	80 91 22 3f 	lds	r24, 0x3F22	; 0x803f22 <CMIN+0x1>
+ 990:	89 83       	std	Y+1, r24	; 0x01
+ 992:	c3 cf       	rjmp	.-122    	; 0x91a <I2C_read_handler+0x26>
+ 994:	80 91 23 3f 	lds	r24, 0x3F23	; 0x803f23 <CMIN+0x2>
+ 998:	89 83       	std	Y+1, r24	; 0x01
+ 99a:	bf cf       	rjmp	.-130    	; 0x91a <I2C_read_handler+0x26>
+ 99c:	80 91 24 3f 	lds	r24, 0x3F24	; 0x803f24 <CMIN+0x3>
+ 9a0:	89 83       	std	Y+1, r24	; 0x01
+ 9a2:	bb cf       	rjmp	.-138    	; 0x91a <I2C_read_handler+0x26>
+ 9a4:	80 91 2a 3f 	lds	r24, 0x3F2A	; 0x803f2a <CMAX>
+ 9a8:	89 83       	std	Y+1, r24	; 0x01
+ 9aa:	b7 cf       	rjmp	.-146    	; 0x91a <I2C_read_handler+0x26>
+ 9ac:	80 91 2b 3f 	lds	r24, 0x3F2B	; 0x803f2b <CMAX+0x1>
+ 9b0:	89 83       	std	Y+1, r24	; 0x01
+ 9b2:	b3 cf       	rjmp	.-154    	; 0x91a <I2C_read_handler+0x26>
+ 9b4:	80 91 2c 3f 	lds	r24, 0x3F2C	; 0x803f2c <CMAX+0x2>
+ 9b8:	89 83       	std	Y+1, r24	; 0x01
+ 9ba:	af cf       	rjmp	.-162    	; 0x91a <I2C_read_handler+0x26>
+ 9bc:	80 91 2d 3f 	lds	r24, 0x3F2D	; 0x803f2d <CMAX+0x3>
+ 9c0:	89 83       	std	Y+1, r24	; 0x01
+ 9c2:	ab cf       	rjmp	.-170    	; 0x91a <I2C_read_handler+0x26>
+ 9c4:	80 91 1a 3f 	lds	r24, 0x3F1A	; 0x803f1a <CVAL>
+ 9c8:	89 83       	std	Y+1, r24	; 0x01
+ 9ca:	a7 cf       	rjmp	.-178    	; 0x91a <I2C_read_handler+0x26>
+ 9cc:	80 91 1b 3f 	lds	r24, 0x3F1B	; 0x803f1b <CVAL+0x1>
+ 9d0:	89 83       	std	Y+1, r24	; 0x01
+ 9d2:	a3 cf       	rjmp	.-186    	; 0x91a <I2C_read_handler+0x26>
+ 9d4:	80 91 1c 3f 	lds	r24, 0x3F1C	; 0x803f1c <CVAL+0x2>
+ 9d8:	89 83       	std	Y+1, r24	; 0x01
+ 9da:	9f cf       	rjmp	.-194    	; 0x91a <I2C_read_handler+0x26>
+ 9dc:	80 91 1d 3f 	lds	r24, 0x3F1D	; 0x803f1d <CVAL+0x3>
+ 9e0:	89 83       	std	Y+1, r24	; 0x01
+ 9e2:	9b cf       	rjmp	.-202    	; 0x91a <I2C_read_handler+0x26>
+ 9e4:	80 91 2e 3f 	lds	r24, 0x3F2E	; 0x803f2e <ESTATUS>
+ 9e8:	89 83       	std	Y+1, r24	; 0x01
+ 9ea:	ba dc       	rcall	.-1676   	; 0x360 <Ext_Int_Reset>
+ 9ec:	96 cf       	rjmp	.-212    	; 0x91a <I2C_read_handler+0x26>
+ 9ee:	80 91 19 3f 	lds	r24, 0x3F19	; 0x803f19 <INTCONF>
+ 9f2:	89 83       	std	Y+1, r24	; 0x01
+ 9f4:	92 cf       	rjmp	.-220    	; 0x91a <I2C_read_handler+0x26>
+ 9f6:	80 91 1e 3f 	lds	r24, 0x3F1E	; 0x803f1e <GCONF>
+ 9fa:	89 83       	std	Y+1, r24	; 0x01
+ 9fc:	8e cf       	rjmp	.-228    	; 0x91a <I2C_read_handler+0x26>
 
-00000a04 <I2C_write_handler>:
- a04:	80 91 29 3f 	lds	r24, 0x3F29	; 0x803f29 <data_type>
- a08:	88 23       	and	r24, r24
- a0a:	51 f1       	breq	.+84     	; 0xa60 <I2C_write_handler+0x5c>
- a0c:	e0 91 0c 3f 	lds	r30, 0x3F0C	; 0x803f0c <register_address>
- a10:	8e 2f       	mov	r24, r30
- a12:	90 e0       	ldi	r25, 0x00	; 0
- a14:	83 37       	cpi	r24, 0x73	; 115
- a16:	91 05       	cpc	r25, r1
- a18:	58 f0       	brcs	.+22     	; 0xa30 <I2C_write_handler+0x2c>
- a1a:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
- a1e:	87 fd       	sbrc	r24, 7
- a20:	0b c0       	rjmp	.+22     	; 0xa38 <I2C_write_handler+0x34>
- a22:	54 d2       	rcall	.+1192   	; 0xecc <I2C_send_ack>
- a24:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
- a28:	8f 5f       	subi	r24, 0xFF	; 255
- a2a:	80 93 0c 3f 	sts	0x3F0C, r24	; 0x803f0c <register_address>
- a2e:	08 95       	ret
- a30:	fc 01       	movw	r30, r24
- a32:	ec 56       	subi	r30, 0x6C	; 108
- a34:	ff 4f       	sbci	r31, 0xFF	; 255
- a36:	09 94       	ijmp
- a38:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
- a3c:	8f 3f       	cpi	r24, 0xFF	; 255
- a3e:	89 f3       	breq	.-30     	; 0xa22 <I2C_write_handler+0x1e>
- a40:	3b d2       	rcall	.+1142   	; 0xeb8 <I2C_read>
- a42:	20 91 0c 3f 	lds	r18, 0x3F0C	; 0x803f0c <register_address>
- a46:	30 e0       	ldi	r19, 0x00	; 0
- a48:	68 2f       	mov	r22, r24
- a4a:	c9 01       	movw	r24, r18
- a4c:	8f 57       	subi	r24, 0x7F	; 127
- a4e:	91 09       	sbc	r25, r1
- a50:	60 d2       	rcall	.+1216   	; 0xf12 <FLASH_0_write_eeprom_byte>
- a52:	3c d2       	rcall	.+1144   	; 0xecc <I2C_send_ack>
- a54:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
- a58:	8f 5f       	subi	r24, 0xFF	; 255
- a5a:	80 93 0c 3f 	sts	0x3F0C, r24	; 0x803f0c <register_address>
- a5e:	08 95       	ret
- a60:	2b d2       	rcall	.+1110   	; 0xeb8 <I2C_read>
- a62:	80 93 0c 3f 	sts	0x3F0C, r24	; 0x803f0c <register_address>
- a66:	81 e0       	ldi	r24, 0x01	; 1
- a68:	80 93 29 3f 	sts	0x3F29, r24	; 0x803f29 <data_type>
- a6c:	2f c2       	rjmp	.+1118   	; 0xecc <I2C_send_ack>
- a6e:	24 d2       	rcall	.+1096   	; 0xeb8 <I2C_read>
- a70:	80 93 18 3f 	sts	0x3F18, r24	; 0x803f18 <I2CADDRESS>
- a74:	e0 91 0b 3f 	lds	r30, 0x3F0B	; 0x803f0b <AddCnt>
- a78:	81 e0       	ldi	r24, 0x01	; 1
- a7a:	8e 0f       	add	r24, r30
- a7c:	80 93 0b 3f 	sts	0x3F0B, r24	; 0x803f0b <AddCnt>
- a80:	f0 e0       	ldi	r31, 0x00	; 0
- a82:	80 91 18 3f 	lds	r24, 0x3F18	; 0x803f18 <I2CADDRESS>
- a86:	e0 50       	subi	r30, 0x00	; 0
- a88:	f1 4c       	sbci	r31, 0xC1	; 193
- a8a:	80 83       	st	Z, r24
- a8c:	80 91 0b 3f 	lds	r24, 0x3F0B	; 0x803f0b <AddCnt>
- a90:	83 30       	cpi	r24, 0x03	; 3
- a92:	18 f2       	brcs	.-122    	; 0xa1a <I2C_write_handler+0x16>
- a94:	10 92 0b 3f 	sts	0x3F0B, r1	; 0x803f0b <AddCnt>
- a98:	90 91 00 3f 	lds	r25, 0x3F00	; 0x803f00 <__DATA_REGION_ORIGIN__>
- a9c:	80 91 01 3f 	lds	r24, 0x3F01	; 0x803f01 <__DATA_REGION_ORIGIN__+0x1>
- aa0:	98 13       	cpse	r25, r24
- aa2:	bb cf       	rjmp	.-138    	; 0xa1a <I2C_write_handler+0x16>
- aa4:	90 91 00 3f 	lds	r25, 0x3F00	; 0x803f00 <__DATA_REGION_ORIGIN__>
- aa8:	80 91 02 3f 	lds	r24, 0x3F02	; 0x803f02 <__DATA_REGION_ORIGIN__+0x2>
- aac:	98 13       	cpse	r25, r24
- aae:	b5 cf       	rjmp	.-150    	; 0xa1a <I2C_write_handler+0x16>
- ab0:	60 91 18 3f 	lds	r22, 0x3F18	; 0x803f18 <I2CADDRESS>
- ab4:	80 e0       	ldi	r24, 0x00	; 0
- ab6:	90 e0       	ldi	r25, 0x00	; 0
- ab8:	2c d2       	rcall	.+1112   	; 0xf12 <FLASH_0_write_eeprom_byte>
- aba:	81 e0       	ldi	r24, 0x01	; 1
- abc:	80 93 00 3f 	sts	0x3F00, r24	; 0x803f00 <__DATA_REGION_ORIGIN__>
- ac0:	82 e0       	ldi	r24, 0x02	; 2
- ac2:	80 93 01 3f 	sts	0x3F01, r24	; 0x803f01 <__DATA_REGION_ORIGIN__+0x1>
- ac6:	83 e0       	ldi	r24, 0x03	; 3
- ac8:	80 93 02 3f 	sts	0x3F02, r24	; 0x803f02 <__DATA_REGION_ORIGIN__+0x2>
- acc:	a6 cf       	rjmp	.-180    	; 0xa1a <I2C_write_handler+0x16>
- ace:	f4 d1       	rcall	.+1000   	; 0xeb8 <I2C_read>
- ad0:	80 93 1e 3f 	sts	0x3F1E, r24	; 0x803f1e <GCONF>
- ad4:	b9 db       	rcall	.-2190   	; 0x248 <Gconf_process>
- ad6:	a1 cf       	rjmp	.-190    	; 0xa1a <I2C_write_handler+0x16>
- ad8:	ef d1       	rcall	.+990    	; 0xeb8 <I2C_read>
- ada:	80 93 19 3f 	sts	0x3F19, r24	; 0x803f19 <INTCONF>
- ade:	9d cf       	rjmp	.-198    	; 0xa1a <I2C_write_handler+0x16>
- ae0:	eb d1       	rcall	.+982    	; 0xeb8 <I2C_read>
- ae2:	80 93 1d 3f 	sts	0x3F1D, r24	; 0x803f1d <CVAL+0x3>
- ae6:	99 cf       	rjmp	.-206    	; 0xa1a <I2C_write_handler+0x16>
- ae8:	e7 d1       	rcall	.+974    	; 0xeb8 <I2C_read>
- aea:	80 93 1c 3f 	sts	0x3F1C, r24	; 0x803f1c <CVAL+0x2>
- aee:	95 cf       	rjmp	.-214    	; 0xa1a <I2C_write_handler+0x16>
- af0:	e3 d1       	rcall	.+966    	; 0xeb8 <I2C_read>
- af2:	80 93 1b 3f 	sts	0x3F1B, r24	; 0x803f1b <CVAL+0x1>
- af6:	91 cf       	rjmp	.-222    	; 0xa1a <I2C_write_handler+0x16>
- af8:	df d1       	rcall	.+958    	; 0xeb8 <I2C_read>
- afa:	80 93 1a 3f 	sts	0x3F1A, r24	; 0x803f1a <CVAL>
- afe:	8d cf       	rjmp	.-230    	; 0xa1a <I2C_write_handler+0x16>
- b00:	db d1       	rcall	.+950    	; 0xeb8 <I2C_read>
- b02:	80 93 2d 3f 	sts	0x3F2D, r24	; 0x803f2d <CMAX+0x3>
- b06:	89 cf       	rjmp	.-238    	; 0xa1a <I2C_write_handler+0x16>
- b08:	d7 d1       	rcall	.+942    	; 0xeb8 <I2C_read>
- b0a:	80 93 2c 3f 	sts	0x3F2C, r24	; 0x803f2c <CMAX+0x2>
- b0e:	85 cf       	rjmp	.-246    	; 0xa1a <I2C_write_handler+0x16>
- b10:	d3 d1       	rcall	.+934    	; 0xeb8 <I2C_read>
- b12:	80 93 2b 3f 	sts	0x3F2B, r24	; 0x803f2b <CMAX+0x1>
- b16:	81 cf       	rjmp	.-254    	; 0xa1a <I2C_write_handler+0x16>
- b18:	cf d1       	rcall	.+926    	; 0xeb8 <I2C_read>
- b1a:	80 93 2a 3f 	sts	0x3F2A, r24	; 0x803f2a <CMAX>
- b1e:	7d cf       	rjmp	.-262    	; 0xa1a <I2C_write_handler+0x16>
- b20:	cb d1       	rcall	.+918    	; 0xeb8 <I2C_read>
- b22:	80 93 24 3f 	sts	0x3F24, r24	; 0x803f24 <CMIN+0x3>
- b26:	79 cf       	rjmp	.-270    	; 0xa1a <I2C_write_handler+0x16>
- b28:	c7 d1       	rcall	.+910    	; 0xeb8 <I2C_read>
- b2a:	80 93 23 3f 	sts	0x3F23, r24	; 0x803f23 <CMIN+0x2>
- b2e:	75 cf       	rjmp	.-278    	; 0xa1a <I2C_write_handler+0x16>
- b30:	c3 d1       	rcall	.+902    	; 0xeb8 <I2C_read>
- b32:	80 93 22 3f 	sts	0x3F22, r24	; 0x803f22 <CMIN+0x1>
- b36:	71 cf       	rjmp	.-286    	; 0xa1a <I2C_write_handler+0x16>
- b38:	bf d1       	rcall	.+894    	; 0xeb8 <I2C_read>
- b3a:	80 93 21 3f 	sts	0x3F21, r24	; 0x803f21 <CMIN>
- b3e:	6d cf       	rjmp	.-294    	; 0xa1a <I2C_write_handler+0x16>
- b40:	bb d1       	rcall	.+886    	; 0xeb8 <I2C_read>
- b42:	80 93 28 3f 	sts	0x3F28, r24	; 0x803f28 <ISTEP+0x3>
- b46:	69 cf       	rjmp	.-302    	; 0xa1a <I2C_write_handler+0x16>
- b48:	b7 d1       	rcall	.+878    	; 0xeb8 <I2C_read>
- b4a:	80 93 27 3f 	sts	0x3F27, r24	; 0x803f27 <ISTEP+0x2>
- b4e:	65 cf       	rjmp	.-310    	; 0xa1a <I2C_write_handler+0x16>
- b50:	b3 d1       	rcall	.+870    	; 0xeb8 <I2C_read>
- b52:	80 93 26 3f 	sts	0x3F26, r24	; 0x803f26 <ISTEP+0x1>
- b56:	61 cf       	rjmp	.-318    	; 0xa1a <I2C_write_handler+0x16>
- b58:	af d1       	rcall	.+862    	; 0xeb8 <I2C_read>
- b5a:	80 93 25 3f 	sts	0x3F25, r24	; 0x803f25 <ISTEP>
- b5e:	5d cf       	rjmp	.-326    	; 0xa1a <I2C_write_handler+0x16>
- b60:	ab d1       	rcall	.+854    	; 0xeb8 <I2C_read>
- b62:	80 93 17 3f 	sts	0x3F17, r24	; 0x803f17 <DPPERIOD>
- b66:	80 91 17 3f 	lds	r24, 0x3F17	; 0x803f17 <DPPERIOD>
- b6a:	2a e0       	ldi	r18, 0x0A	; 10
- b6c:	82 9f       	mul	r24, r18
- b6e:	c0 01       	movw	r24, r0
- b70:	11 24       	eor	r1, r1
- b72:	80 93 1f 3f 	sts	0x3F1F, r24	; 0x803f1f <DoublePush>
- b76:	90 93 20 3f 	sts	0x3F20, r25	; 0x803f20 <DoublePush+0x1>
- b7a:	4f cf       	rjmp	.-354    	; 0xa1a <I2C_write_handler+0x16>
+000009fe <I2C_write_handler>:
+ 9fe:	80 91 29 3f 	lds	r24, 0x3F29	; 0x803f29 <data_type>
+ a02:	88 23       	and	r24, r24
+ a04:	41 f1       	breq	.+80     	; 0xa56 <I2C_write_handler+0x58>
+ a06:	e0 91 0c 3f 	lds	r30, 0x3F0C	; 0x803f0c <register_address>
+ a0a:	8e 2f       	mov	r24, r30
+ a0c:	90 e0       	ldi	r25, 0x00	; 0
+ a0e:	83 37       	cpi	r24, 0x73	; 115
+ a10:	91 05       	cpc	r25, r1
+ a12:	58 f0       	brcs	.+22     	; 0xa2a <I2C_write_handler+0x2c>
+ a14:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
+ a18:	81 38       	cpi	r24, 0x81	; 129
+ a1a:	58 f4       	brcc	.+22     	; 0xa32 <I2C_write_handler+0x34>
+ a1c:	52 d2       	rcall	.+1188   	; 0xec2 <I2C_send_ack>
+ a1e:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
+ a22:	8f 5f       	subi	r24, 0xFF	; 255
+ a24:	80 93 0c 3f 	sts	0x3F0C, r24	; 0x803f0c <register_address>
+ a28:	08 95       	ret
+ a2a:	fc 01       	movw	r30, r24
+ a2c:	ec 56       	subi	r30, 0x6C	; 108
+ a2e:	ff 4f       	sbci	r31, 0xFF	; 255
+ a30:	09 94       	ijmp
+ a32:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
+ a36:	3b d2       	rcall	.+1142   	; 0xeae <I2C_read>
+ a38:	20 91 0c 3f 	lds	r18, 0x3F0C	; 0x803f0c <register_address>
+ a3c:	30 e0       	ldi	r19, 0x00	; 0
+ a3e:	68 2f       	mov	r22, r24
+ a40:	c9 01       	movw	r24, r18
+ a42:	80 58       	subi	r24, 0x80	; 128
+ a44:	91 09       	sbc	r25, r1
+ a46:	60 d2       	rcall	.+1216   	; 0xf08 <FLASH_0_write_eeprom_byte>
+ a48:	3c d2       	rcall	.+1144   	; 0xec2 <I2C_send_ack>
+ a4a:	80 91 0c 3f 	lds	r24, 0x3F0C	; 0x803f0c <register_address>
+ a4e:	8f 5f       	subi	r24, 0xFF	; 255
+ a50:	80 93 0c 3f 	sts	0x3F0C, r24	; 0x803f0c <register_address>
+ a54:	08 95       	ret
+ a56:	2b d2       	rcall	.+1110   	; 0xeae <I2C_read>
+ a58:	80 93 0c 3f 	sts	0x3F0C, r24	; 0x803f0c <register_address>
+ a5c:	81 e0       	ldi	r24, 0x01	; 1
+ a5e:	80 93 29 3f 	sts	0x3F29, r24	; 0x803f29 <data_type>
+ a62:	2f c2       	rjmp	.+1118   	; 0xec2 <I2C_send_ack>
+ a64:	24 d2       	rcall	.+1096   	; 0xeae <I2C_read>
+ a66:	80 93 18 3f 	sts	0x3F18, r24	; 0x803f18 <I2CADDRESS>
+ a6a:	e0 91 0b 3f 	lds	r30, 0x3F0B	; 0x803f0b <AddCnt>
+ a6e:	81 e0       	ldi	r24, 0x01	; 1
+ a70:	8e 0f       	add	r24, r30
+ a72:	80 93 0b 3f 	sts	0x3F0B, r24	; 0x803f0b <AddCnt>
+ a76:	f0 e0       	ldi	r31, 0x00	; 0
+ a78:	80 91 18 3f 	lds	r24, 0x3F18	; 0x803f18 <I2CADDRESS>
+ a7c:	e0 50       	subi	r30, 0x00	; 0
+ a7e:	f1 4c       	sbci	r31, 0xC1	; 193
+ a80:	80 83       	st	Z, r24
+ a82:	80 91 0b 3f 	lds	r24, 0x3F0B	; 0x803f0b <AddCnt>
+ a86:	83 30       	cpi	r24, 0x03	; 3
+ a88:	28 f2       	brcs	.-118    	; 0xa14 <I2C_write_handler+0x16>
+ a8a:	10 92 0b 3f 	sts	0x3F0B, r1	; 0x803f0b <AddCnt>
+ a8e:	90 91 00 3f 	lds	r25, 0x3F00	; 0x803f00 <__DATA_REGION_ORIGIN__>
+ a92:	80 91 01 3f 	lds	r24, 0x3F01	; 0x803f01 <__DATA_REGION_ORIGIN__+0x1>
+ a96:	98 13       	cpse	r25, r24
+ a98:	bd cf       	rjmp	.-134    	; 0xa14 <I2C_write_handler+0x16>
+ a9a:	90 91 00 3f 	lds	r25, 0x3F00	; 0x803f00 <__DATA_REGION_ORIGIN__>
+ a9e:	80 91 02 3f 	lds	r24, 0x3F02	; 0x803f02 <__DATA_REGION_ORIGIN__+0x2>
+ aa2:	98 13       	cpse	r25, r24
+ aa4:	b7 cf       	rjmp	.-146    	; 0xa14 <I2C_write_handler+0x16>
+ aa6:	60 91 18 3f 	lds	r22, 0x3F18	; 0x803f18 <I2CADDRESS>
+ aaa:	80 e0       	ldi	r24, 0x00	; 0
+ aac:	90 e0       	ldi	r25, 0x00	; 0
+ aae:	2c d2       	rcall	.+1112   	; 0xf08 <FLASH_0_write_eeprom_byte>
+ ab0:	81 e0       	ldi	r24, 0x01	; 1
+ ab2:	80 93 00 3f 	sts	0x3F00, r24	; 0x803f00 <__DATA_REGION_ORIGIN__>
+ ab6:	82 e0       	ldi	r24, 0x02	; 2
+ ab8:	80 93 01 3f 	sts	0x3F01, r24	; 0x803f01 <__DATA_REGION_ORIGIN__+0x1>
+ abc:	83 e0       	ldi	r24, 0x03	; 3
+ abe:	80 93 02 3f 	sts	0x3F02, r24	; 0x803f02 <__DATA_REGION_ORIGIN__+0x2>
+ ac2:	a8 cf       	rjmp	.-176    	; 0xa14 <I2C_write_handler+0x16>
+ ac4:	f4 d1       	rcall	.+1000   	; 0xeae <I2C_read>
+ ac6:	80 93 1e 3f 	sts	0x3F1E, r24	; 0x803f1e <GCONF>
+ aca:	be db       	rcall	.-2180   	; 0x248 <Gconf_process>
+ acc:	a3 cf       	rjmp	.-186    	; 0xa14 <I2C_write_handler+0x16>
+ ace:	ef d1       	rcall	.+990    	; 0xeae <I2C_read>
+ ad0:	80 93 19 3f 	sts	0x3F19, r24	; 0x803f19 <INTCONF>
+ ad4:	9f cf       	rjmp	.-194    	; 0xa14 <I2C_write_handler+0x16>
+ ad6:	eb d1       	rcall	.+982    	; 0xeae <I2C_read>
+ ad8:	80 93 1d 3f 	sts	0x3F1D, r24	; 0x803f1d <CVAL+0x3>
+ adc:	9b cf       	rjmp	.-202    	; 0xa14 <I2C_write_handler+0x16>
+ ade:	e7 d1       	rcall	.+974    	; 0xeae <I2C_read>
+ ae0:	80 93 1c 3f 	sts	0x3F1C, r24	; 0x803f1c <CVAL+0x2>
+ ae4:	97 cf       	rjmp	.-210    	; 0xa14 <I2C_write_handler+0x16>
+ ae6:	e3 d1       	rcall	.+966    	; 0xeae <I2C_read>
+ ae8:	80 93 1b 3f 	sts	0x3F1B, r24	; 0x803f1b <CVAL+0x1>
+ aec:	93 cf       	rjmp	.-218    	; 0xa14 <I2C_write_handler+0x16>
+ aee:	df d1       	rcall	.+958    	; 0xeae <I2C_read>
+ af0:	80 93 1a 3f 	sts	0x3F1A, r24	; 0x803f1a <CVAL>
+ af4:	8f cf       	rjmp	.-226    	; 0xa14 <I2C_write_handler+0x16>
+ af6:	db d1       	rcall	.+950    	; 0xeae <I2C_read>
+ af8:	80 93 2d 3f 	sts	0x3F2D, r24	; 0x803f2d <CMAX+0x3>
+ afc:	8b cf       	rjmp	.-234    	; 0xa14 <I2C_write_handler+0x16>
+ afe:	d7 d1       	rcall	.+942    	; 0xeae <I2C_read>
+ b00:	80 93 2c 3f 	sts	0x3F2C, r24	; 0x803f2c <CMAX+0x2>
+ b04:	87 cf       	rjmp	.-242    	; 0xa14 <I2C_write_handler+0x16>
+ b06:	d3 d1       	rcall	.+934    	; 0xeae <I2C_read>
+ b08:	80 93 2b 3f 	sts	0x3F2B, r24	; 0x803f2b <CMAX+0x1>
+ b0c:	83 cf       	rjmp	.-250    	; 0xa14 <I2C_write_handler+0x16>
+ b0e:	cf d1       	rcall	.+926    	; 0xeae <I2C_read>
+ b10:	80 93 2a 3f 	sts	0x3F2A, r24	; 0x803f2a <CMAX>
+ b14:	7f cf       	rjmp	.-258    	; 0xa14 <I2C_write_handler+0x16>
+ b16:	cb d1       	rcall	.+918    	; 0xeae <I2C_read>
+ b18:	80 93 24 3f 	sts	0x3F24, r24	; 0x803f24 <CMIN+0x3>
+ b1c:	7b cf       	rjmp	.-266    	; 0xa14 <I2C_write_handler+0x16>
+ b1e:	c7 d1       	rcall	.+910    	; 0xeae <I2C_read>
+ b20:	80 93 23 3f 	sts	0x3F23, r24	; 0x803f23 <CMIN+0x2>
+ b24:	77 cf       	rjmp	.-274    	; 0xa14 <I2C_write_handler+0x16>
+ b26:	c3 d1       	rcall	.+902    	; 0xeae <I2C_read>
+ b28:	80 93 22 3f 	sts	0x3F22, r24	; 0x803f22 <CMIN+0x1>
+ b2c:	73 cf       	rjmp	.-282    	; 0xa14 <I2C_write_handler+0x16>
+ b2e:	bf d1       	rcall	.+894    	; 0xeae <I2C_read>
+ b30:	80 93 21 3f 	sts	0x3F21, r24	; 0x803f21 <CMIN>
+ b34:	6f cf       	rjmp	.-290    	; 0xa14 <I2C_write_handler+0x16>
+ b36:	bb d1       	rcall	.+886    	; 0xeae <I2C_read>
+ b38:	80 93 28 3f 	sts	0x3F28, r24	; 0x803f28 <ISTEP+0x3>
+ b3c:	6b cf       	rjmp	.-298    	; 0xa14 <I2C_write_handler+0x16>
+ b3e:	b7 d1       	rcall	.+878    	; 0xeae <I2C_read>
+ b40:	80 93 27 3f 	sts	0x3F27, r24	; 0x803f27 <ISTEP+0x2>
+ b44:	67 cf       	rjmp	.-306    	; 0xa14 <I2C_write_handler+0x16>
+ b46:	b3 d1       	rcall	.+870    	; 0xeae <I2C_read>
+ b48:	80 93 26 3f 	sts	0x3F26, r24	; 0x803f26 <ISTEP+0x1>
+ b4c:	63 cf       	rjmp	.-314    	; 0xa14 <I2C_write_handler+0x16>
+ b4e:	af d1       	rcall	.+862    	; 0xeae <I2C_read>
+ b50:	80 93 25 3f 	sts	0x3F25, r24	; 0x803f25 <ISTEP>
+ b54:	5f cf       	rjmp	.-322    	; 0xa14 <I2C_write_handler+0x16>
+ b56:	ab d1       	rcall	.+854    	; 0xeae <I2C_read>
+ b58:	80 93 17 3f 	sts	0x3F17, r24	; 0x803f17 <DPPERIOD>
+ b5c:	80 91 17 3f 	lds	r24, 0x3F17	; 0x803f17 <DPPERIOD>
+ b60:	2a e0       	ldi	r18, 0x0A	; 10
+ b62:	82 9f       	mul	r24, r18
+ b64:	c0 01       	movw	r24, r0
+ b66:	11 24       	eor	r1, r1
+ b68:	80 93 1f 3f 	sts	0x3F1F, r24	; 0x803f1f <DoublePush>
+ b6c:	90 93 20 3f 	sts	0x3F20, r25	; 0x803f20 <DoublePush+0x1>
+ b70:	51 cf       	rjmp	.-350    	; 0xa14 <I2C_write_handler+0x16>
 
-00000b7c <I2C_init_clock_stretch>:
- b7c:	10 92 1e 3f 	sts	0x3F1E, r1	; 0x803f1e <GCONF>
- b80:	10 92 19 3f 	sts	0x3F19, r1	; 0x803f19 <INTCONF>
- b84:	10 92 2e 3f 	sts	0x3F2E, r1	; 0x803f2e <ESTATUS>
- b88:	10 92 1a 3f 	sts	0x3F1A, r1	; 0x803f1a <CVAL>
- b8c:	10 92 1b 3f 	sts	0x3F1B, r1	; 0x803f1b <CVAL+0x1>
- b90:	10 92 1c 3f 	sts	0x3F1C, r1	; 0x803f1c <CVAL+0x2>
- b94:	10 92 1d 3f 	sts	0x3F1D, r1	; 0x803f1d <CVAL+0x3>
- b98:	10 92 2a 3f 	sts	0x3F2A, r1	; 0x803f2a <CMAX>
- b9c:	10 92 2b 3f 	sts	0x3F2B, r1	; 0x803f2b <CMAX+0x1>
- ba0:	10 92 2c 3f 	sts	0x3F2C, r1	; 0x803f2c <CMAX+0x2>
- ba4:	10 92 2d 3f 	sts	0x3F2D, r1	; 0x803f2d <CMAX+0x3>
- ba8:	10 92 21 3f 	sts	0x3F21, r1	; 0x803f21 <CMIN>
- bac:	10 92 22 3f 	sts	0x3F22, r1	; 0x803f22 <CMIN+0x1>
- bb0:	10 92 23 3f 	sts	0x3F23, r1	; 0x803f23 <CMIN+0x2>
- bb4:	10 92 24 3f 	sts	0x3F24, r1	; 0x803f24 <CMIN+0x3>
- bb8:	10 92 25 3f 	sts	0x3F25, r1	; 0x803f25 <ISTEP>
- bbc:	10 92 26 3f 	sts	0x3F26, r1	; 0x803f26 <ISTEP+0x1>
- bc0:	10 92 27 3f 	sts	0x3F27, r1	; 0x803f27 <ISTEP+0x2>
- bc4:	10 92 28 3f 	sts	0x3F28, r1	; 0x803f28 <ISTEP+0x3>
- bc8:	10 92 17 3f 	sts	0x3F17, r1	; 0x803f17 <DPPERIOD>
- bcc:	80 e0       	ldi	r24, 0x00	; 0
- bce:	90 e0       	ldi	r25, 0x00	; 0
- bd0:	9c d1       	rcall	.+824    	; 0xf0a <FLASH_0_read_eeprom_byte>
- bd2:	88 0f       	add	r24, r24
- bd4:	e0 e1       	ldi	r30, 0x10	; 16
- bd6:	f8 e0       	ldi	r31, 0x08	; 8
- bd8:	84 87       	std	Z+12, r24	; 0x0c
- bda:	81 ee       	ldi	r24, 0xE1	; 225
- bdc:	81 87       	std	Z+9, r24	; 0x09
- bde:	82 e0       	ldi	r24, 0x02	; 2
- be0:	95 e0       	ldi	r25, 0x05	; 5
- be2:	7d d1       	rcall	.+762    	; 0xede <I2C_set_write_callback>
- be4:	8a e7       	ldi	r24, 0x7A	; 122
- be6:	94 e0       	ldi	r25, 0x04	; 4
- be8:	75 d1       	rcall	.+746    	; 0xed4 <I2C_set_read_callback>
- bea:	87 e7       	ldi	r24, 0x77	; 119
- bec:	94 e0       	ldi	r25, 0x04	; 4
- bee:	7c d1       	rcall	.+760    	; 0xee8 <I2C_set_address_callback>
- bf0:	85 e7       	ldi	r24, 0x75	; 117
- bf2:	94 e0       	ldi	r25, 0x04	; 4
- bf4:	7e d1       	rcall	.+764    	; 0xef2 <I2C_set_stop_callback>
- bf6:	86 e7       	ldi	r24, 0x76	; 118
- bf8:	94 e0       	ldi	r25, 0x04	; 4
- bfa:	80 d1       	rcall	.+768    	; 0xefc <I2C_set_collision_callback>
- bfc:	87 e7       	ldi	r24, 0x77	; 119
- bfe:	94 e0       	ldi	r25, 0x04	; 4
- c00:	73 d1       	rcall	.+742    	; 0xee8 <I2C_set_address_callback>
- c02:	c8 d0       	rcall	.+400    	; 0xd94 <I2C_open>
- c04:	21 cb       	rjmp	.-2494   	; 0x248 <Gconf_process>
+00000b72 <I2C_init_clock_stretch>:
+ b72:	10 92 1e 3f 	sts	0x3F1E, r1	; 0x803f1e <GCONF>
+ b76:	10 92 19 3f 	sts	0x3F19, r1	; 0x803f19 <INTCONF>
+ b7a:	10 92 2e 3f 	sts	0x3F2E, r1	; 0x803f2e <ESTATUS>
+ b7e:	10 92 1a 3f 	sts	0x3F1A, r1	; 0x803f1a <CVAL>
+ b82:	10 92 1b 3f 	sts	0x3F1B, r1	; 0x803f1b <CVAL+0x1>
+ b86:	10 92 1c 3f 	sts	0x3F1C, r1	; 0x803f1c <CVAL+0x2>
+ b8a:	10 92 1d 3f 	sts	0x3F1D, r1	; 0x803f1d <CVAL+0x3>
+ b8e:	10 92 2a 3f 	sts	0x3F2A, r1	; 0x803f2a <CMAX>
+ b92:	10 92 2b 3f 	sts	0x3F2B, r1	; 0x803f2b <CMAX+0x1>
+ b96:	10 92 2c 3f 	sts	0x3F2C, r1	; 0x803f2c <CMAX+0x2>
+ b9a:	10 92 2d 3f 	sts	0x3F2D, r1	; 0x803f2d <CMAX+0x3>
+ b9e:	10 92 21 3f 	sts	0x3F21, r1	; 0x803f21 <CMIN>
+ ba2:	10 92 22 3f 	sts	0x3F22, r1	; 0x803f22 <CMIN+0x1>
+ ba6:	10 92 23 3f 	sts	0x3F23, r1	; 0x803f23 <CMIN+0x2>
+ baa:	10 92 24 3f 	sts	0x3F24, r1	; 0x803f24 <CMIN+0x3>
+ bae:	10 92 25 3f 	sts	0x3F25, r1	; 0x803f25 <ISTEP>
+ bb2:	10 92 26 3f 	sts	0x3F26, r1	; 0x803f26 <ISTEP+0x1>
+ bb6:	10 92 27 3f 	sts	0x3F27, r1	; 0x803f27 <ISTEP+0x2>
+ bba:	10 92 28 3f 	sts	0x3F28, r1	; 0x803f28 <ISTEP+0x3>
+ bbe:	10 92 17 3f 	sts	0x3F17, r1	; 0x803f17 <DPPERIOD>
+ bc2:	80 e0       	ldi	r24, 0x00	; 0
+ bc4:	90 e0       	ldi	r25, 0x00	; 0
+ bc6:	9c d1       	rcall	.+824    	; 0xf00 <FLASH_0_read_eeprom_byte>
+ bc8:	88 0f       	add	r24, r24
+ bca:	e0 e1       	ldi	r30, 0x10	; 16
+ bcc:	f8 e0       	ldi	r31, 0x08	; 8
+ bce:	84 87       	std	Z+12, r24	; 0x0c
+ bd0:	81 ee       	ldi	r24, 0xE1	; 225
+ bd2:	81 87       	std	Z+9, r24	; 0x09
+ bd4:	8f ef       	ldi	r24, 0xFF	; 255
+ bd6:	94 e0       	ldi	r25, 0x04	; 4
+ bd8:	7d d1       	rcall	.+762    	; 0xed4 <I2C_set_write_callback>
+ bda:	8a e7       	ldi	r24, 0x7A	; 122
+ bdc:	94 e0       	ldi	r25, 0x04	; 4
+ bde:	75 d1       	rcall	.+746    	; 0xeca <I2C_set_read_callback>
+ be0:	87 e7       	ldi	r24, 0x77	; 119
+ be2:	94 e0       	ldi	r25, 0x04	; 4
+ be4:	7c d1       	rcall	.+760    	; 0xede <I2C_set_address_callback>
+ be6:	85 e7       	ldi	r24, 0x75	; 117
+ be8:	94 e0       	ldi	r25, 0x04	; 4
+ bea:	7e d1       	rcall	.+764    	; 0xee8 <I2C_set_stop_callback>
+ bec:	86 e7       	ldi	r24, 0x76	; 118
+ bee:	94 e0       	ldi	r25, 0x04	; 4
+ bf0:	80 d1       	rcall	.+768    	; 0xef2 <I2C_set_collision_callback>
+ bf2:	87 e7       	ldi	r24, 0x77	; 119
+ bf4:	94 e0       	ldi	r25, 0x04	; 4
+ bf6:	73 d1       	rcall	.+742    	; 0xede <I2C_set_address_callback>
+ bf8:	c8 d0       	rcall	.+400    	; 0xd8a <I2C_open>
+ bfa:	26 cb       	rjmp	.-2484   	; 0x248 <Gconf_process>
 
-00000c06 <SystemTimer>:
- c06:	81 e0       	ldi	r24, 0x01	; 1
- c08:	80 93 2f 3f 	sts	0x3F2F, r24	; 0x803f2f <sys_timer>
- c0c:	08 95       	ret
+00000bfc <SystemTimer>:
+ bfc:	81 e0       	ldi	r24, 0x01	; 1
+ bfe:	80 93 2f 3f 	sts	0x3F2F, r24	; 0x803f2f <sys_timer>
+ c02:	08 95       	ret
 
-00000c0e <main>:
- c0e:	1b db       	rcall	.-2506   	; 0x246 <atmel_start_init>
- c10:	b5 df       	rcall	.-150    	; 0xb7c <I2C_init_clock_stretch>
- c12:	80 91 2f 3f 	lds	r24, 0x3F2F	; 0x803f2f <sys_timer>
- c16:	88 23       	and	r24, r24
- c18:	e1 f3       	breq	.-8      	; 0xc12 <main+0x4>
- c1a:	10 92 2f 3f 	sts	0x3F2F, r1	; 0x803f2f <sys_timer>
- c1e:	3c dd       	rcall	.-1416   	; 0x698 <Encoder_PushButton_FSM>
- c20:	f8 cf       	rjmp	.-16     	; 0xc12 <main+0x4>
+00000c04 <main>:
+ c04:	20 db       	rcall	.-2496   	; 0x246 <atmel_start_init>
+ c06:	b5 df       	rcall	.-150    	; 0xb72 <I2C_init_clock_stretch>
+ c08:	80 91 2f 3f 	lds	r24, 0x3F2F	; 0x803f2f <sys_timer>
+ c0c:	88 23       	and	r24, r24
+ c0e:	e1 f3       	breq	.-8      	; 0xc08 <main+0x4>
+ c10:	10 92 2f 3f 	sts	0x3F2F, r1	; 0x803f2f <sys_timer>
+ c14:	41 dd       	rcall	.-1406   	; 0x698 <Encoder_PushButton_FSM>
+ c16:	f8 cf       	rjmp	.-16     	; 0xc08 <main+0x4>
 
-00000c22 <BOD_init>:
- c22:	82 e0       	ldi	r24, 0x02	; 2
- c24:	80 93 89 00 	sts	0x0089, r24	; 0x800089 <__RODATA_PM_OFFSET__+0x7f8089>
- c28:	80 e0       	ldi	r24, 0x00	; 0
- c2a:	08 95       	ret
+00000c18 <BOD_init>:
+ c18:	82 e0       	ldi	r24, 0x02	; 2
+ c1a:	80 93 89 00 	sts	0x0089, r24	; 0x800089 <__RODATA_PM_OFFSET__+0x7f8089>
+ c1e:	80 e0       	ldi	r24, 0x00	; 0
+ c20:	08 95       	ret
 
-00000c2c <CLKCTRL_init>:
- c2c:	41 e0       	ldi	r20, 0x01	; 1
- c2e:	68 ed       	ldi	r22, 0xD8	; 216
- c30:	81 e6       	ldi	r24, 0x61	; 97
- c32:	90 e0       	ldi	r25, 0x00	; 0
- c34:	88 d1       	rcall	.+784    	; 0xf46 <protected_write_io>
- c36:	80 e0       	ldi	r24, 0x00	; 0
- c38:	08 95       	ret
+00000c22 <CLKCTRL_init>:
+ c22:	41 e0       	ldi	r20, 0x01	; 1
+ c24:	68 ed       	ldi	r22, 0xD8	; 216
+ c26:	81 e6       	ldi	r24, 0x61	; 97
+ c28:	90 e0       	ldi	r25, 0x00	; 0
+ c2a:	88 d1       	rcall	.+784    	; 0xf3c <protected_write_io>
+ c2c:	80 e0       	ldi	r24, 0x00	; 0
+ c2e:	08 95       	ret
 
-00000c3a <CPUINT_init>:
- c3a:	78 94       	sei
- c3c:	80 e0       	ldi	r24, 0x00	; 0
- c3e:	08 95       	ret
+00000c30 <CPUINT_init>:
+ c30:	78 94       	sei
+ c32:	80 e0       	ldi	r24, 0x00	; 0
+ c34:	08 95       	ret
 
-00000c40 <system_init>:
- c40:	0f 93       	push	r16
- c42:	1f 93       	push	r17
- c44:	cf 93       	push	r28
- c46:	df 93       	push	r29
- c48:	20 e1       	ldi	r18, 0x10	; 16
- c4a:	34 e0       	ldi	r19, 0x04	; 4
- c4c:	f9 01       	movw	r30, r18
- c4e:	80 81       	ld	r24, Z
+00000c36 <system_init>:
+ c36:	0f 93       	push	r16
+ c38:	1f 93       	push	r17
+ c3a:	cf 93       	push	r28
+ c3c:	df 93       	push	r29
+ c3e:	20 e1       	ldi	r18, 0x10	; 16
+ c40:	34 e0       	ldi	r19, 0x04	; 4
+ c42:	f9 01       	movw	r30, r18
+ c44:	80 81       	ld	r24, Z
+ c46:	88 60       	ori	r24, 0x08	; 8
+ c48:	80 83       	st	Z, r24
+ c4a:	c1 e1       	ldi	r28, 0x11	; 17
+ c4c:	d4 e0       	ldi	r29, 0x04	; 4
+ c4e:	88 81       	ld	r24, Y
  c50:	88 60       	ori	r24, 0x08	; 8
- c52:	80 83       	st	Z, r24
- c54:	c1 e1       	ldi	r28, 0x11	; 17
- c56:	d4 e0       	ldi	r29, 0x04	; 4
- c58:	88 81       	ld	r24, Y
- c5a:	88 60       	ori	r24, 0x08	; 8
- c5c:	88 83       	st	Y, r24
- c5e:	02 e1       	ldi	r16, 0x12	; 18
- c60:	14 e0       	ldi	r17, 0x04	; 4
- c62:	f8 01       	movw	r30, r16
- c64:	80 81       	ld	r24, Z
- c66:	88 60       	ori	r24, 0x08	; 8
- c68:	80 83       	st	Z, r24
- c6a:	83 e1       	ldi	r24, 0x13	; 19
- c6c:	94 e0       	ldi	r25, 0x04	; 4
- c6e:	fc 01       	movw	r30, r24
+ c52:	88 83       	st	Y, r24
+ c54:	02 e1       	ldi	r16, 0x12	; 18
+ c56:	14 e0       	ldi	r17, 0x04	; 4
+ c58:	f8 01       	movw	r30, r16
+ c5a:	80 81       	ld	r24, Z
+ c5c:	88 60       	ori	r24, 0x08	; 8
+ c5e:	80 83       	st	Z, r24
+ c60:	83 e1       	ldi	r24, 0x13	; 19
+ c62:	94 e0       	ldi	r25, 0x04	; 4
+ c64:	fc 01       	movw	r30, r24
+ c66:	40 81       	ld	r20, Z
+ c68:	48 60       	ori	r20, 0x08	; 8
+ c6a:	40 83       	st	Z, r20
+ c6c:	e4 e1       	ldi	r30, 0x14	; 20
+ c6e:	f4 e0       	ldi	r31, 0x04	; 4
  c70:	40 81       	ld	r20, Z
  c72:	48 60       	ori	r20, 0x08	; 8
  c74:	40 83       	st	Z, r20
- c76:	e4 e1       	ldi	r30, 0x14	; 20
+ c76:	e5 e1       	ldi	r30, 0x15	; 21
  c78:	f4 e0       	ldi	r31, 0x04	; 4
  c7a:	40 81       	ld	r20, Z
  c7c:	48 60       	ori	r20, 0x08	; 8
  c7e:	40 83       	st	Z, r20
- c80:	e5 e1       	ldi	r30, 0x15	; 21
- c82:	f4 e0       	ldi	r31, 0x04	; 4
- c84:	40 81       	ld	r20, Z
+ c80:	a6 e1       	ldi	r26, 0x16	; 22
+ c82:	b4 e0       	ldi	r27, 0x04	; 4
+ c84:	4c 91       	ld	r20, X
  c86:	48 60       	ori	r20, 0x08	; 8
- c88:	40 83       	st	Z, r20
- c8a:	a6 e1       	ldi	r26, 0x16	; 22
- c8c:	b4 e0       	ldi	r27, 0x04	; 4
- c8e:	4c 91       	ld	r20, X
- c90:	48 60       	ori	r20, 0x08	; 8
- c92:	4c 93       	st	X, r20
- c94:	67 e1       	ldi	r22, 0x17	; 23
- c96:	74 e0       	ldi	r23, 0x04	; 4
- c98:	fb 01       	movw	r30, r22
- c9a:	40 81       	ld	r20, Z
- c9c:	48 60       	ori	r20, 0x08	; 8
- c9e:	40 83       	st	Z, r20
- ca0:	00 98       	cbi	0x00, 0	; 0
- ca2:	08 9a       	sbi	0x01, 0	; 1
- ca4:	f9 01       	movw	r30, r18
- ca6:	40 81       	ld	r20, Z
- ca8:	47 7f       	andi	r20, 0xF7	; 247
- caa:	40 83       	st	Z, r20
- cac:	40 81       	ld	r20, Z
- cae:	4f 77       	andi	r20, 0x7F	; 127
- cb0:	40 83       	st	Z, r20
- cb2:	40 81       	ld	r20, Z
- cb4:	48 7f       	andi	r20, 0xF8	; 248
- cb6:	40 83       	st	Z, r20
- cb8:	03 98       	cbi	0x00, 3	; 0
- cba:	0b 98       	cbi	0x01, 3	; 1
- cbc:	fc 01       	movw	r30, r24
- cbe:	20 81       	ld	r18, Z
- cc0:	28 60       	ori	r18, 0x08	; 8
- cc2:	20 83       	st	Z, r18
- cc4:	20 81       	ld	r18, Z
- cc6:	2f 77       	andi	r18, 0x7F	; 127
- cc8:	20 83       	st	Z, r18
- cca:	20 81       	ld	r18, Z
- ccc:	28 7f       	andi	r18, 0xF8	; 248
- cce:	20 83       	st	Z, r18
- cd0:	06 98       	cbi	0x00, 6	; 0
- cd2:	0e 98       	cbi	0x01, 6	; 1
- cd4:	8c 91       	ld	r24, X
- cd6:	88 60       	ori	r24, 0x08	; 8
- cd8:	8c 93       	st	X, r24
- cda:	8c 91       	ld	r24, X
- cdc:	8f 77       	andi	r24, 0x7F	; 127
- cde:	8c 93       	st	X, r24
- ce0:	8c 91       	ld	r24, X
- ce2:	88 7f       	andi	r24, 0xF8	; 248
- ce4:	81 60       	ori	r24, 0x01	; 1
- ce6:	8c 93       	st	X, r24
- ce8:	07 98       	cbi	0x00, 7	; 0
- cea:	0f 98       	cbi	0x01, 7	; 1
- cec:	fb 01       	movw	r30, r22
- cee:	80 81       	ld	r24, Z
- cf0:	88 60       	ori	r24, 0x08	; 8
- cf2:	80 83       	st	Z, r24
- cf4:	80 81       	ld	r24, Z
- cf6:	8f 77       	andi	r24, 0x7F	; 127
- cf8:	80 83       	st	Z, r24
- cfa:	80 81       	ld	r24, Z
- cfc:	88 7f       	andi	r24, 0xF8	; 248
- cfe:	81 60       	ori	r24, 0x01	; 1
- d00:	80 83       	st	Z, r24
- d02:	94 df       	rcall	.-216    	; 0xc2c <CLKCTRL_init>
- d04:	41 d1       	rcall	.+642    	; 0xf88 <WDT_init>
- d06:	25 d1       	rcall	.+586    	; 0xf52 <TIMER_0_init>
- d08:	30 d1       	rcall	.+608    	; 0xf6a <TIMER_1_init>
- d0a:	20 d0       	rcall	.+64     	; 0xd4c <EVENT_SYSTEM_0_init>
- d0c:	fc d0       	rcall	.+504    	; 0xf06 <FLASH_0_init>
- d0e:	95 df       	rcall	.-214    	; 0xc3a <CPUINT_init>
- d10:	1e d1       	rcall	.+572    	; 0xf4e <SLPCTRL_init>
- d12:	02 9a       	sbi	0x00, 2	; 0
- d14:	0a 98       	cbi	0x01, 2	; 1
- d16:	f8 01       	movw	r30, r16
- d18:	80 81       	ld	r24, Z
- d1a:	87 7f       	andi	r24, 0xF7	; 247
- d1c:	80 83       	st	Z, r24
- d1e:	80 81       	ld	r24, Z
- d20:	8f 77       	andi	r24, 0x7F	; 127
- d22:	80 83       	st	Z, r24
- d24:	80 81       	ld	r24, Z
- d26:	88 7f       	andi	r24, 0xF8	; 248
- d28:	80 83       	st	Z, r24
- d2a:	01 9a       	sbi	0x00, 1	; 0
- d2c:	09 98       	cbi	0x01, 1	; 1
- d2e:	88 81       	ld	r24, Y
- d30:	87 7f       	andi	r24, 0xF7	; 247
- d32:	88 83       	st	Y, r24
- d34:	88 81       	ld	r24, Y
- d36:	8f 77       	andi	r24, 0x7F	; 127
- d38:	88 83       	st	Y, r24
- d3a:	88 81       	ld	r24, Y
- d3c:	88 7f       	andi	r24, 0xF8	; 248
- d3e:	88 83       	st	Y, r24
- d40:	0a d0       	rcall	.+20     	; 0xd56 <I2C_init>
- d42:	df 91       	pop	r29
- d44:	cf 91       	pop	r28
- d46:	1f 91       	pop	r17
- d48:	0f 91       	pop	r16
- d4a:	6b cf       	rjmp	.-298    	; 0xc22 <BOD_init>
+ c88:	4c 93       	st	X, r20
+ c8a:	67 e1       	ldi	r22, 0x17	; 23
+ c8c:	74 e0       	ldi	r23, 0x04	; 4
+ c8e:	fb 01       	movw	r30, r22
+ c90:	40 81       	ld	r20, Z
+ c92:	48 60       	ori	r20, 0x08	; 8
+ c94:	40 83       	st	Z, r20
+ c96:	00 98       	cbi	0x00, 0	; 0
+ c98:	08 9a       	sbi	0x01, 0	; 1
+ c9a:	f9 01       	movw	r30, r18
+ c9c:	40 81       	ld	r20, Z
+ c9e:	47 7f       	andi	r20, 0xF7	; 247
+ ca0:	40 83       	st	Z, r20
+ ca2:	40 81       	ld	r20, Z
+ ca4:	4f 77       	andi	r20, 0x7F	; 127
+ ca6:	40 83       	st	Z, r20
+ ca8:	40 81       	ld	r20, Z
+ caa:	48 7f       	andi	r20, 0xF8	; 248
+ cac:	40 83       	st	Z, r20
+ cae:	03 98       	cbi	0x00, 3	; 0
+ cb0:	0b 98       	cbi	0x01, 3	; 1
+ cb2:	fc 01       	movw	r30, r24
+ cb4:	20 81       	ld	r18, Z
+ cb6:	28 60       	ori	r18, 0x08	; 8
+ cb8:	20 83       	st	Z, r18
+ cba:	20 81       	ld	r18, Z
+ cbc:	2f 77       	andi	r18, 0x7F	; 127
+ cbe:	20 83       	st	Z, r18
+ cc0:	20 81       	ld	r18, Z
+ cc2:	28 7f       	andi	r18, 0xF8	; 248
+ cc4:	20 83       	st	Z, r18
+ cc6:	06 98       	cbi	0x00, 6	; 0
+ cc8:	0e 98       	cbi	0x01, 6	; 1
+ cca:	8c 91       	ld	r24, X
+ ccc:	88 60       	ori	r24, 0x08	; 8
+ cce:	8c 93       	st	X, r24
+ cd0:	8c 91       	ld	r24, X
+ cd2:	8f 77       	andi	r24, 0x7F	; 127
+ cd4:	8c 93       	st	X, r24
+ cd6:	8c 91       	ld	r24, X
+ cd8:	88 7f       	andi	r24, 0xF8	; 248
+ cda:	81 60       	ori	r24, 0x01	; 1
+ cdc:	8c 93       	st	X, r24
+ cde:	07 98       	cbi	0x00, 7	; 0
+ ce0:	0f 98       	cbi	0x01, 7	; 1
+ ce2:	fb 01       	movw	r30, r22
+ ce4:	80 81       	ld	r24, Z
+ ce6:	88 60       	ori	r24, 0x08	; 8
+ ce8:	80 83       	st	Z, r24
+ cea:	80 81       	ld	r24, Z
+ cec:	8f 77       	andi	r24, 0x7F	; 127
+ cee:	80 83       	st	Z, r24
+ cf0:	80 81       	ld	r24, Z
+ cf2:	88 7f       	andi	r24, 0xF8	; 248
+ cf4:	81 60       	ori	r24, 0x01	; 1
+ cf6:	80 83       	st	Z, r24
+ cf8:	94 df       	rcall	.-216    	; 0xc22 <CLKCTRL_init>
+ cfa:	41 d1       	rcall	.+642    	; 0xf7e <WDT_init>
+ cfc:	25 d1       	rcall	.+586    	; 0xf48 <TIMER_0_init>
+ cfe:	30 d1       	rcall	.+608    	; 0xf60 <TIMER_1_init>
+ d00:	20 d0       	rcall	.+64     	; 0xd42 <EVENT_SYSTEM_0_init>
+ d02:	fc d0       	rcall	.+504    	; 0xefc <FLASH_0_init>
+ d04:	95 df       	rcall	.-214    	; 0xc30 <CPUINT_init>
+ d06:	1e d1       	rcall	.+572    	; 0xf44 <SLPCTRL_init>
+ d08:	02 9a       	sbi	0x00, 2	; 0
+ d0a:	0a 98       	cbi	0x01, 2	; 1
+ d0c:	f8 01       	movw	r30, r16
+ d0e:	80 81       	ld	r24, Z
+ d10:	87 7f       	andi	r24, 0xF7	; 247
+ d12:	80 83       	st	Z, r24
+ d14:	80 81       	ld	r24, Z
+ d16:	8f 77       	andi	r24, 0x7F	; 127
+ d18:	80 83       	st	Z, r24
+ d1a:	80 81       	ld	r24, Z
+ d1c:	88 7f       	andi	r24, 0xF8	; 248
+ d1e:	80 83       	st	Z, r24
+ d20:	01 9a       	sbi	0x00, 1	; 0
+ d22:	09 98       	cbi	0x01, 1	; 1
+ d24:	88 81       	ld	r24, Y
+ d26:	87 7f       	andi	r24, 0xF7	; 247
+ d28:	88 83       	st	Y, r24
+ d2a:	88 81       	ld	r24, Y
+ d2c:	8f 77       	andi	r24, 0x7F	; 127
+ d2e:	88 83       	st	Y, r24
+ d30:	88 81       	ld	r24, Y
+ d32:	88 7f       	andi	r24, 0xF8	; 248
+ d34:	88 83       	st	Y, r24
+ d36:	0a d0       	rcall	.+20     	; 0xd4c <I2C_init>
+ d38:	df 91       	pop	r29
+ d3a:	cf 91       	pop	r28
+ d3c:	1f 91       	pop	r17
+ d3e:	0f 91       	pop	r16
+ d40:	6b cf       	rjmp	.-298    	; 0xc18 <BOD_init>
 
-00000d4c <EVENT_SYSTEM_0_init>:
- d4c:	81 e0       	ldi	r24, 0x01	; 1
- d4e:	80 93 92 01 	sts	0x0192, r24	; 0x800192 <__RODATA_PM_OFFSET__+0x7f8192>
- d52:	80 e0       	ldi	r24, 0x00	; 0
- d54:	08 95       	ret
+00000d42 <EVENT_SYSTEM_0_init>:
+ d42:	81 e0       	ldi	r24, 0x01	; 1
+ d44:	80 93 92 01 	sts	0x0192, r24	; 0x800192 <__RODATA_PM_OFFSET__+0x7f8192>
+ d48:	80 e0       	ldi	r24, 0x00	; 0
+ d4a:	08 95       	ret
 
-00000d56 <I2C_init>:
- d56:	e0 e1       	ldi	r30, 0x10	; 16
- d58:	f8 e0       	ldi	r31, 0x08	; 8
- d5a:	80 e4       	ldi	r24, 0x40	; 64
- d5c:	84 87       	std	Z+12, r24	; 0x0c
- d5e:	83 ee       	ldi	r24, 0xE3	; 227
- d60:	81 87       	std	Z+9, r24	; 0x09
- d62:	10 92 32 3f 	sts	0x3F32, r1	; 0x803f32 <I2C_write_interrupt_handler>
- d66:	10 92 33 3f 	sts	0x3F33, r1	; 0x803f33 <I2C_write_interrupt_handler+0x1>
- d6a:	10 92 3a 3f 	sts	0x3F3A, r1	; 0x803f3a <I2C_read_interrupt_handler>
- d6e:	10 92 3b 3f 	sts	0x3F3B, r1	; 0x803f3b <I2C_read_interrupt_handler+0x1>
- d72:	10 92 34 3f 	sts	0x3F34, r1	; 0x803f34 <I2C_address_interrupt_handler>
- d76:	10 92 35 3f 	sts	0x3F35, r1	; 0x803f35 <I2C_address_interrupt_handler+0x1>
- d7a:	10 92 30 3f 	sts	0x3F30, r1	; 0x803f30 <I2C_stop_interrupt_handler>
- d7e:	10 92 31 3f 	sts	0x3F31, r1	; 0x803f31 <I2C_stop_interrupt_handler+0x1>
- d82:	10 92 36 3f 	sts	0x3F36, r1	; 0x803f36 <I2C_collision_interrupt_handler>
- d86:	10 92 37 3f 	sts	0x3F37, r1	; 0x803f37 <I2C_collision_interrupt_handler+0x1>
- d8a:	10 92 38 3f 	sts	0x3F38, r1	; 0x803f38 <I2C_bus_error_interrupt_handler>
- d8e:	10 92 39 3f 	sts	0x3F39, r1	; 0x803f39 <I2C_bus_error_interrupt_handler+0x1>
- d92:	08 95       	ret
+00000d4c <I2C_init>:
+ d4c:	e0 e1       	ldi	r30, 0x10	; 16
+ d4e:	f8 e0       	ldi	r31, 0x08	; 8
+ d50:	80 e4       	ldi	r24, 0x40	; 64
+ d52:	84 87       	std	Z+12, r24	; 0x0c
+ d54:	83 ee       	ldi	r24, 0xE3	; 227
+ d56:	81 87       	std	Z+9, r24	; 0x09
+ d58:	10 92 32 3f 	sts	0x3F32, r1	; 0x803f32 <I2C_write_interrupt_handler>
+ d5c:	10 92 33 3f 	sts	0x3F33, r1	; 0x803f33 <I2C_write_interrupt_handler+0x1>
+ d60:	10 92 3a 3f 	sts	0x3F3A, r1	; 0x803f3a <I2C_read_interrupt_handler>
+ d64:	10 92 3b 3f 	sts	0x3F3B, r1	; 0x803f3b <I2C_read_interrupt_handler+0x1>
+ d68:	10 92 34 3f 	sts	0x3F34, r1	; 0x803f34 <I2C_address_interrupt_handler>
+ d6c:	10 92 35 3f 	sts	0x3F35, r1	; 0x803f35 <I2C_address_interrupt_handler+0x1>
+ d70:	10 92 30 3f 	sts	0x3F30, r1	; 0x803f30 <I2C_stop_interrupt_handler>
+ d74:	10 92 31 3f 	sts	0x3F31, r1	; 0x803f31 <I2C_stop_interrupt_handler+0x1>
+ d78:	10 92 36 3f 	sts	0x3F36, r1	; 0x803f36 <I2C_collision_interrupt_handler>
+ d7c:	10 92 37 3f 	sts	0x3F37, r1	; 0x803f37 <I2C_collision_interrupt_handler+0x1>
+ d80:	10 92 38 3f 	sts	0x3F38, r1	; 0x803f38 <I2C_bus_error_interrupt_handler>
+ d84:	10 92 39 3f 	sts	0x3F39, r1	; 0x803f39 <I2C_bus_error_interrupt_handler+0x1>
+ d88:	08 95       	ret
 
-00000d94 <I2C_open>:
- d94:	e0 e1       	ldi	r30, 0x10	; 16
- d96:	f8 e0       	ldi	r31, 0x08	; 8
- d98:	81 85       	ldd	r24, Z+9	; 0x09
- d9a:	81 60       	ori	r24, 0x01	; 1
- d9c:	81 87       	std	Z+9, r24	; 0x09
- d9e:	08 95       	ret
+00000d8a <I2C_open>:
+ d8a:	e0 e1       	ldi	r30, 0x10	; 16
+ d8c:	f8 e0       	ldi	r31, 0x08	; 8
+ d8e:	81 85       	ldd	r24, Z+9	; 0x09
+ d90:	81 60       	ori	r24, 0x01	; 1
+ d92:	81 87       	std	Z+9, r24	; 0x09
+ d94:	08 95       	ret
 
-00000da0 <__vector_19>:
- da0:	1f 92       	push	r1
- da2:	0f 92       	push	r0
- da4:	0f b6       	in	r0, 0x3f	; 63
- da6:	0f 92       	push	r0
- da8:	11 24       	eor	r1, r1
- daa:	2f 93       	push	r18
- dac:	3f 93       	push	r19
- dae:	4f 93       	push	r20
- db0:	5f 93       	push	r21
- db2:	6f 93       	push	r22
- db4:	7f 93       	push	r23
- db6:	8f 93       	push	r24
- db8:	9f 93       	push	r25
- dba:	af 93       	push	r26
- dbc:	bf 93       	push	r27
- dbe:	ef 93       	push	r30
- dc0:	ff 93       	push	r31
- dc2:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- dc6:	83 ff       	sbrs	r24, 3
- dc8:	18 c0       	rjmp	.+48     	; 0xdfa <__vector_19+0x5a>
- dca:	e0 91 36 3f 	lds	r30, 0x3F36	; 0x803f36 <I2C_collision_interrupt_handler>
- dce:	f0 91 37 3f 	lds	r31, 0x3F37	; 0x803f37 <I2C_collision_interrupt_handler+0x1>
- dd2:	30 97       	sbiw	r30, 0x00	; 0
- dd4:	09 f0       	breq	.+2      	; 0xdd8 <__vector_19+0x38>
- dd6:	09 95       	icall
- dd8:	ff 91       	pop	r31
- dda:	ef 91       	pop	r30
- ddc:	bf 91       	pop	r27
- dde:	af 91       	pop	r26
- de0:	9f 91       	pop	r25
- de2:	8f 91       	pop	r24
- de4:	7f 91       	pop	r23
- de6:	6f 91       	pop	r22
- de8:	5f 91       	pop	r21
- dea:	4f 91       	pop	r20
- dec:	3f 91       	pop	r19
- dee:	2f 91       	pop	r18
- df0:	0f 90       	pop	r0
- df2:	0f be       	out	0x3f, r0	; 63
- df4:	0f 90       	pop	r0
- df6:	1f 90       	pop	r1
- df8:	18 95       	reti
- dfa:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- dfe:	82 ff       	sbrs	r24, 2
- e00:	07 c0       	rjmp	.+14     	; 0xe10 <__vector_19+0x70>
- e02:	e0 91 38 3f 	lds	r30, 0x3F38	; 0x803f38 <I2C_bus_error_interrupt_handler>
- e06:	f0 91 39 3f 	lds	r31, 0x3F39	; 0x803f39 <I2C_bus_error_interrupt_handler+0x1>
- e0a:	30 97       	sbiw	r30, 0x00	; 0
- e0c:	21 f7       	brne	.-56     	; 0xdd6 <__vector_19+0x36>
- e0e:	e4 cf       	rjmp	.-56     	; 0xdd8 <__vector_19+0x38>
- e10:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- e14:	86 fd       	sbrc	r24, 6
- e16:	17 c0       	rjmp	.+46     	; 0xe46 <__vector_19+0xa6>
- e18:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- e1c:	87 fd       	sbrc	r24, 7
- e1e:	22 c0       	rjmp	.+68     	; 0xe64 <__vector_19+0xc4>
- e20:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- e24:	86 ff       	sbrs	r24, 6
- e26:	d8 cf       	rjmp	.-80     	; 0xdd8 <__vector_19+0x38>
- e28:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- e2c:	80 fd       	sbrc	r24, 0
- e2e:	d4 cf       	rjmp	.-88     	; 0xdd8 <__vector_19+0x38>
- e30:	e0 91 30 3f 	lds	r30, 0x3F30	; 0x803f30 <I2C_stop_interrupt_handler>
- e34:	f0 91 31 3f 	lds	r31, 0x3F31	; 0x803f31 <I2C_stop_interrupt_handler+0x1>
- e38:	30 97       	sbiw	r30, 0x00	; 0
- e3a:	09 f0       	breq	.+2      	; 0xe3e <__vector_19+0x9e>
- e3c:	09 95       	icall
- e3e:	82 e0       	ldi	r24, 0x02	; 2
- e40:	80 93 1a 08 	sts	0x081A, r24	; 0x80081a <__RODATA_PM_OFFSET__+0x7f881a>
- e44:	c9 cf       	rjmp	.-110    	; 0xdd8 <__vector_19+0x38>
- e46:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- e4a:	80 ff       	sbrs	r24, 0
- e4c:	e5 cf       	rjmp	.-54     	; 0xe18 <__vector_19+0x78>
- e4e:	e0 91 34 3f 	lds	r30, 0x3F34	; 0x803f34 <I2C_address_interrupt_handler>
- e52:	f0 91 35 3f 	lds	r31, 0x3F35	; 0x803f35 <I2C_address_interrupt_handler+0x1>
- e56:	30 97       	sbiw	r30, 0x00	; 0
- e58:	09 f0       	breq	.+2      	; 0xe5c <__vector_19+0xbc>
- e5a:	09 95       	icall
- e5c:	81 e0       	ldi	r24, 0x01	; 1
- e5e:	80 93 03 3f 	sts	0x3F03, r24	; 0x803f03 <isFirstByte.3460>
- e62:	ba cf       	rjmp	.-140    	; 0xdd8 <__vector_19+0x38>
- e64:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- e68:	81 ff       	sbrs	r24, 1
- e6a:	15 c0       	rjmp	.+42     	; 0xe96 <__vector_19+0xf6>
- e6c:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- e70:	84 ff       	sbrs	r24, 4
- e72:	04 c0       	rjmp	.+8      	; 0xe7c <__vector_19+0xdc>
- e74:	80 91 03 3f 	lds	r24, 0x3F03	; 0x803f03 <isFirstByte.3460>
- e78:	88 23       	and	r24, r24
- e7a:	a9 f0       	breq	.+42     	; 0xea6 <__vector_19+0x106>
- e7c:	10 92 03 3f 	sts	0x3F03, r1	; 0x803f03 <isFirstByte.3460>
- e80:	e0 91 3a 3f 	lds	r30, 0x3F3A	; 0x803f3a <I2C_read_interrupt_handler>
- e84:	f0 91 3b 3f 	lds	r31, 0x3F3B	; 0x803f3b <I2C_read_interrupt_handler+0x1>
- e88:	30 97       	sbiw	r30, 0x00	; 0
- e8a:	09 f0       	breq	.+2      	; 0xe8e <__vector_19+0xee>
- e8c:	09 95       	icall
- e8e:	83 e0       	ldi	r24, 0x03	; 3
- e90:	80 93 1a 08 	sts	0x081A, r24	; 0x80081a <__RODATA_PM_OFFSET__+0x7f881a>
- e94:	a1 cf       	rjmp	.-190    	; 0xdd8 <__vector_19+0x38>
- e96:	e0 91 32 3f 	lds	r30, 0x3F32	; 0x803f32 <I2C_write_interrupt_handler>
- e9a:	f0 91 33 3f 	lds	r31, 0x3F33	; 0x803f33 <I2C_write_interrupt_handler+0x1>
- e9e:	30 97       	sbiw	r30, 0x00	; 0
- ea0:	09 f0       	breq	.+2      	; 0xea4 <__vector_19+0x104>
- ea2:	99 cf       	rjmp	.-206    	; 0xdd6 <__vector_19+0x36>
- ea4:	99 cf       	rjmp	.-206    	; 0xdd8 <__vector_19+0x38>
- ea6:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- eaa:	80 6c       	ori	r24, 0xC0	; 192
- eac:	80 93 1b 08 	sts	0x081B, r24	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
- eb0:	82 e0       	ldi	r24, 0x02	; 2
- eb2:	80 93 1a 08 	sts	0x081A, r24	; 0x80081a <__RODATA_PM_OFFSET__+0x7f881a>
- eb6:	90 cf       	rjmp	.-224    	; 0xdd8 <__vector_19+0x38>
+00000d96 <__vector_19>:
+ d96:	1f 92       	push	r1
+ d98:	0f 92       	push	r0
+ d9a:	0f b6       	in	r0, 0x3f	; 63
+ d9c:	0f 92       	push	r0
+ d9e:	11 24       	eor	r1, r1
+ da0:	2f 93       	push	r18
+ da2:	3f 93       	push	r19
+ da4:	4f 93       	push	r20
+ da6:	5f 93       	push	r21
+ da8:	6f 93       	push	r22
+ daa:	7f 93       	push	r23
+ dac:	8f 93       	push	r24
+ dae:	9f 93       	push	r25
+ db0:	af 93       	push	r26
+ db2:	bf 93       	push	r27
+ db4:	ef 93       	push	r30
+ db6:	ff 93       	push	r31
+ db8:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ dbc:	83 ff       	sbrs	r24, 3
+ dbe:	18 c0       	rjmp	.+48     	; 0xdf0 <__vector_19+0x5a>
+ dc0:	e0 91 36 3f 	lds	r30, 0x3F36	; 0x803f36 <I2C_collision_interrupt_handler>
+ dc4:	f0 91 37 3f 	lds	r31, 0x3F37	; 0x803f37 <I2C_collision_interrupt_handler+0x1>
+ dc8:	30 97       	sbiw	r30, 0x00	; 0
+ dca:	09 f0       	breq	.+2      	; 0xdce <__vector_19+0x38>
+ dcc:	09 95       	icall
+ dce:	ff 91       	pop	r31
+ dd0:	ef 91       	pop	r30
+ dd2:	bf 91       	pop	r27
+ dd4:	af 91       	pop	r26
+ dd6:	9f 91       	pop	r25
+ dd8:	8f 91       	pop	r24
+ dda:	7f 91       	pop	r23
+ ddc:	6f 91       	pop	r22
+ dde:	5f 91       	pop	r21
+ de0:	4f 91       	pop	r20
+ de2:	3f 91       	pop	r19
+ de4:	2f 91       	pop	r18
+ de6:	0f 90       	pop	r0
+ de8:	0f be       	out	0x3f, r0	; 63
+ dea:	0f 90       	pop	r0
+ dec:	1f 90       	pop	r1
+ dee:	18 95       	reti
+ df0:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ df4:	82 ff       	sbrs	r24, 2
+ df6:	07 c0       	rjmp	.+14     	; 0xe06 <__vector_19+0x70>
+ df8:	e0 91 38 3f 	lds	r30, 0x3F38	; 0x803f38 <I2C_bus_error_interrupt_handler>
+ dfc:	f0 91 39 3f 	lds	r31, 0x3F39	; 0x803f39 <I2C_bus_error_interrupt_handler+0x1>
+ e00:	30 97       	sbiw	r30, 0x00	; 0
+ e02:	21 f7       	brne	.-56     	; 0xdcc <__vector_19+0x36>
+ e04:	e4 cf       	rjmp	.-56     	; 0xdce <__vector_19+0x38>
+ e06:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ e0a:	86 fd       	sbrc	r24, 6
+ e0c:	17 c0       	rjmp	.+46     	; 0xe3c <__vector_19+0xa6>
+ e0e:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ e12:	87 fd       	sbrc	r24, 7
+ e14:	22 c0       	rjmp	.+68     	; 0xe5a <__vector_19+0xc4>
+ e16:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ e1a:	86 ff       	sbrs	r24, 6
+ e1c:	d8 cf       	rjmp	.-80     	; 0xdce <__vector_19+0x38>
+ e1e:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ e22:	80 fd       	sbrc	r24, 0
+ e24:	d4 cf       	rjmp	.-88     	; 0xdce <__vector_19+0x38>
+ e26:	e0 91 30 3f 	lds	r30, 0x3F30	; 0x803f30 <I2C_stop_interrupt_handler>
+ e2a:	f0 91 31 3f 	lds	r31, 0x3F31	; 0x803f31 <I2C_stop_interrupt_handler+0x1>
+ e2e:	30 97       	sbiw	r30, 0x00	; 0
+ e30:	09 f0       	breq	.+2      	; 0xe34 <__vector_19+0x9e>
+ e32:	09 95       	icall
+ e34:	82 e0       	ldi	r24, 0x02	; 2
+ e36:	80 93 1a 08 	sts	0x081A, r24	; 0x80081a <__RODATA_PM_OFFSET__+0x7f881a>
+ e3a:	c9 cf       	rjmp	.-110    	; 0xdce <__vector_19+0x38>
+ e3c:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ e40:	80 ff       	sbrs	r24, 0
+ e42:	e5 cf       	rjmp	.-54     	; 0xe0e <__vector_19+0x78>
+ e44:	e0 91 34 3f 	lds	r30, 0x3F34	; 0x803f34 <I2C_address_interrupt_handler>
+ e48:	f0 91 35 3f 	lds	r31, 0x3F35	; 0x803f35 <I2C_address_interrupt_handler+0x1>
+ e4c:	30 97       	sbiw	r30, 0x00	; 0
+ e4e:	09 f0       	breq	.+2      	; 0xe52 <__vector_19+0xbc>
+ e50:	09 95       	icall
+ e52:	81 e0       	ldi	r24, 0x01	; 1
+ e54:	80 93 03 3f 	sts	0x3F03, r24	; 0x803f03 <isFirstByte.3460>
+ e58:	ba cf       	rjmp	.-140    	; 0xdce <__vector_19+0x38>
+ e5a:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ e5e:	81 ff       	sbrs	r24, 1
+ e60:	15 c0       	rjmp	.+42     	; 0xe8c <__vector_19+0xf6>
+ e62:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ e66:	84 ff       	sbrs	r24, 4
+ e68:	04 c0       	rjmp	.+8      	; 0xe72 <__vector_19+0xdc>
+ e6a:	80 91 03 3f 	lds	r24, 0x3F03	; 0x803f03 <isFirstByte.3460>
+ e6e:	88 23       	and	r24, r24
+ e70:	a9 f0       	breq	.+42     	; 0xe9c <__vector_19+0x106>
+ e72:	10 92 03 3f 	sts	0x3F03, r1	; 0x803f03 <isFirstByte.3460>
+ e76:	e0 91 3a 3f 	lds	r30, 0x3F3A	; 0x803f3a <I2C_read_interrupt_handler>
+ e7a:	f0 91 3b 3f 	lds	r31, 0x3F3B	; 0x803f3b <I2C_read_interrupt_handler+0x1>
+ e7e:	30 97       	sbiw	r30, 0x00	; 0
+ e80:	09 f0       	breq	.+2      	; 0xe84 <__vector_19+0xee>
+ e82:	09 95       	icall
+ e84:	83 e0       	ldi	r24, 0x03	; 3
+ e86:	80 93 1a 08 	sts	0x081A, r24	; 0x80081a <__RODATA_PM_OFFSET__+0x7f881a>
+ e8a:	a1 cf       	rjmp	.-190    	; 0xdce <__vector_19+0x38>
+ e8c:	e0 91 32 3f 	lds	r30, 0x3F32	; 0x803f32 <I2C_write_interrupt_handler>
+ e90:	f0 91 33 3f 	lds	r31, 0x3F33	; 0x803f33 <I2C_write_interrupt_handler+0x1>
+ e94:	30 97       	sbiw	r30, 0x00	; 0
+ e96:	09 f0       	breq	.+2      	; 0xe9a <__vector_19+0x104>
+ e98:	99 cf       	rjmp	.-206    	; 0xdcc <__vector_19+0x36>
+ e9a:	99 cf       	rjmp	.-206    	; 0xdce <__vector_19+0x38>
+ e9c:	80 91 1b 08 	lds	r24, 0x081B	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ ea0:	80 6c       	ori	r24, 0xC0	; 192
+ ea2:	80 93 1b 08 	sts	0x081B, r24	; 0x80081b <__RODATA_PM_OFFSET__+0x7f881b>
+ ea6:	82 e0       	ldi	r24, 0x02	; 2
+ ea8:	80 93 1a 08 	sts	0x081A, r24	; 0x80081a <__RODATA_PM_OFFSET__+0x7f881a>
+ eac:	90 cf       	rjmp	.-224    	; 0xdce <__vector_19+0x38>
 
-00000eb8 <I2C_read>:
- eb8:	80 91 1d 08 	lds	r24, 0x081D	; 0x80081d <__RODATA_PM_OFFSET__+0x7f881d>
- ebc:	08 95       	ret
+00000eae <I2C_read>:
+ eae:	80 91 1d 08 	lds	r24, 0x081D	; 0x80081d <__RODATA_PM_OFFSET__+0x7f881d>
+ eb2:	08 95       	ret
 
-00000ebe <I2C_write>:
- ebe:	e0 e1       	ldi	r30, 0x10	; 16
- ec0:	f8 e0       	ldi	r31, 0x08	; 8
- ec2:	85 87       	std	Z+13, r24	; 0x0d
- ec4:	82 85       	ldd	r24, Z+10	; 0x0a
- ec6:	83 60       	ori	r24, 0x03	; 3
- ec8:	82 87       	std	Z+10, r24	; 0x0a
- eca:	08 95       	ret
+00000eb4 <I2C_write>:
+ eb4:	e0 e1       	ldi	r30, 0x10	; 16
+ eb6:	f8 e0       	ldi	r31, 0x08	; 8
+ eb8:	85 87       	std	Z+13, r24	; 0x0d
+ eba:	82 85       	ldd	r24, Z+10	; 0x0a
+ ebc:	83 60       	ori	r24, 0x03	; 3
+ ebe:	82 87       	std	Z+10, r24	; 0x0a
+ ec0:	08 95       	ret
 
-00000ecc <I2C_send_ack>:
- ecc:	83 e0       	ldi	r24, 0x03	; 3
- ece:	80 93 1a 08 	sts	0x081A, r24	; 0x80081a <__RODATA_PM_OFFSET__+0x7f881a>
+00000ec2 <I2C_send_ack>:
+ ec2:	83 e0       	ldi	r24, 0x03	; 3
+ ec4:	80 93 1a 08 	sts	0x081A, r24	; 0x80081a <__RODATA_PM_OFFSET__+0x7f881a>
+ ec8:	08 95       	ret
+
+00000eca <I2C_set_read_callback>:
+ eca:	80 93 3a 3f 	sts	0x3F3A, r24	; 0x803f3a <I2C_read_interrupt_handler>
+ ece:	90 93 3b 3f 	sts	0x3F3B, r25	; 0x803f3b <I2C_read_interrupt_handler+0x1>
  ed2:	08 95       	ret
 
-00000ed4 <I2C_set_read_callback>:
- ed4:	80 93 3a 3f 	sts	0x3F3A, r24	; 0x803f3a <I2C_read_interrupt_handler>
- ed8:	90 93 3b 3f 	sts	0x3F3B, r25	; 0x803f3b <I2C_read_interrupt_handler+0x1>
+00000ed4 <I2C_set_write_callback>:
+ ed4:	80 93 32 3f 	sts	0x3F32, r24	; 0x803f32 <I2C_write_interrupt_handler>
+ ed8:	90 93 33 3f 	sts	0x3F33, r25	; 0x803f33 <I2C_write_interrupt_handler+0x1>
  edc:	08 95       	ret
 
-00000ede <I2C_set_write_callback>:
- ede:	80 93 32 3f 	sts	0x3F32, r24	; 0x803f32 <I2C_write_interrupt_handler>
- ee2:	90 93 33 3f 	sts	0x3F33, r25	; 0x803f33 <I2C_write_interrupt_handler+0x1>
+00000ede <I2C_set_address_callback>:
+ ede:	80 93 34 3f 	sts	0x3F34, r24	; 0x803f34 <I2C_address_interrupt_handler>
+ ee2:	90 93 35 3f 	sts	0x3F35, r25	; 0x803f35 <I2C_address_interrupt_handler+0x1>
  ee6:	08 95       	ret
 
-00000ee8 <I2C_set_address_callback>:
- ee8:	80 93 34 3f 	sts	0x3F34, r24	; 0x803f34 <I2C_address_interrupt_handler>
- eec:	90 93 35 3f 	sts	0x3F35, r25	; 0x803f35 <I2C_address_interrupt_handler+0x1>
+00000ee8 <I2C_set_stop_callback>:
+ ee8:	80 93 30 3f 	sts	0x3F30, r24	; 0x803f30 <I2C_stop_interrupt_handler>
+ eec:	90 93 31 3f 	sts	0x3F31, r25	; 0x803f31 <I2C_stop_interrupt_handler+0x1>
  ef0:	08 95       	ret
 
-00000ef2 <I2C_set_stop_callback>:
- ef2:	80 93 30 3f 	sts	0x3F30, r24	; 0x803f30 <I2C_stop_interrupt_handler>
- ef6:	90 93 31 3f 	sts	0x3F31, r25	; 0x803f31 <I2C_stop_interrupt_handler+0x1>
+00000ef2 <I2C_set_collision_callback>:
+ ef2:	80 93 36 3f 	sts	0x3F36, r24	; 0x803f36 <I2C_collision_interrupt_handler>
+ ef6:	90 93 37 3f 	sts	0x3F37, r25	; 0x803f37 <I2C_collision_interrupt_handler+0x1>
  efa:	08 95       	ret
 
-00000efc <I2C_set_collision_callback>:
- efc:	80 93 36 3f 	sts	0x3F36, r24	; 0x803f36 <I2C_collision_interrupt_handler>
- f00:	90 93 37 3f 	sts	0x3F37, r25	; 0x803f37 <I2C_collision_interrupt_handler+0x1>
- f04:	08 95       	ret
+00000efc <FLASH_0_init>:
+ efc:	80 e0       	ldi	r24, 0x00	; 0
+ efe:	08 95       	ret
 
-00000f06 <FLASH_0_init>:
- f06:	80 e0       	ldi	r24, 0x00	; 0
- f08:	08 95       	ret
+00000f00 <FLASH_0_read_eeprom_byte>:
+ f00:	9c 5e       	subi	r25, 0xEC	; 236
+ f02:	fc 01       	movw	r30, r24
+ f04:	80 81       	ld	r24, Z
+ f06:	08 95       	ret
 
-00000f0a <FLASH_0_read_eeprom_byte>:
- f0a:	9c 5e       	subi	r25, 0xEC	; 236
- f0c:	fc 01       	movw	r30, r24
- f0e:	80 81       	ld	r24, Z
- f10:	08 95       	ret
+00000f08 <FLASH_0_write_eeprom_byte>:
+ f08:	1f 93       	push	r17
+ f0a:	cf 93       	push	r28
+ f0c:	df 93       	push	r29
+ f0e:	ec 01       	movw	r28, r24
+ f10:	16 2f       	mov	r17, r22
+ f12:	80 91 02 10 	lds	r24, 0x1002	; 0x801002 <__RODATA_PM_OFFSET__+0x7f9002>
+ f16:	81 fd       	sbrc	r24, 1
+ f18:	fc cf       	rjmp	.-8      	; 0xf12 <FLASH_0_write_eeprom_byte+0xa>
+ f1a:	44 e0       	ldi	r20, 0x04	; 4
+ f1c:	6d e9       	ldi	r22, 0x9D	; 157
+ f1e:	80 e0       	ldi	r24, 0x00	; 0
+ f20:	90 e1       	ldi	r25, 0x10	; 16
+ f22:	0c d0       	rcall	.+24     	; 0xf3c <protected_write_io>
+ f24:	dc 5e       	subi	r29, 0xEC	; 236
+ f26:	18 83       	st	Y, r17
+ f28:	43 e0       	ldi	r20, 0x03	; 3
+ f2a:	6d e9       	ldi	r22, 0x9D	; 157
+ f2c:	80 e0       	ldi	r24, 0x00	; 0
+ f2e:	90 e1       	ldi	r25, 0x10	; 16
+ f30:	05 d0       	rcall	.+10     	; 0xf3c <protected_write_io>
+ f32:	80 e0       	ldi	r24, 0x00	; 0
+ f34:	df 91       	pop	r29
+ f36:	cf 91       	pop	r28
+ f38:	1f 91       	pop	r17
+ f3a:	08 95       	ret
 
-00000f12 <FLASH_0_write_eeprom_byte>:
- f12:	1f 93       	push	r17
- f14:	cf 93       	push	r28
- f16:	df 93       	push	r29
- f18:	ec 01       	movw	r28, r24
- f1a:	16 2f       	mov	r17, r22
- f1c:	80 91 02 10 	lds	r24, 0x1002	; 0x801002 <__RODATA_PM_OFFSET__+0x7f9002>
- f20:	81 fd       	sbrc	r24, 1
- f22:	fc cf       	rjmp	.-8      	; 0xf1c <FLASH_0_write_eeprom_byte+0xa>
- f24:	44 e0       	ldi	r20, 0x04	; 4
- f26:	6d e9       	ldi	r22, 0x9D	; 157
- f28:	80 e0       	ldi	r24, 0x00	; 0
- f2a:	90 e1       	ldi	r25, 0x10	; 16
- f2c:	0c d0       	rcall	.+24     	; 0xf46 <protected_write_io>
- f2e:	dc 5e       	subi	r29, 0xEC	; 236
- f30:	18 83       	st	Y, r17
- f32:	43 e0       	ldi	r20, 0x03	; 3
- f34:	6d e9       	ldi	r22, 0x9D	; 157
- f36:	80 e0       	ldi	r24, 0x00	; 0
- f38:	90 e1       	ldi	r25, 0x10	; 16
- f3a:	05 d0       	rcall	.+10     	; 0xf46 <protected_write_io>
- f3c:	80 e0       	ldi	r24, 0x00	; 0
- f3e:	df 91       	pop	r29
- f40:	cf 91       	pop	r28
- f42:	1f 91       	pop	r17
- f44:	08 95       	ret
-
-00000f46 <protected_write_io>:
+00000f3c <protected_write_io>:
 #if defined(__GNUC__)
   
 #ifdef RAMPZ
 	out     _SFR_IO_ADDR(RAMPZ), r1         // Clear bits 23:16 of Z
 #endif
 	movw    r30, r24                // Load addr into Z
- f46:	fc 01       	movw	r30, r24
+ f3c:	fc 01       	movw	r30, r24
 	out     CCP, r22                // Start CCP handshake
- f48:	64 bf       	out	0x34, r22	; 52
+ f3e:	64 bf       	out	0x34, r22	; 52
 	st      Z, r20                  // Write value to I/O register
- f4a:	40 83       	st	Z, r20
+ f40:	40 83       	st	Z, r20
 	ret                             // Return to caller
- f4c:	08 95       	ret
+ f42:	08 95       	ret
 
-00000f4e <SLPCTRL_init>:
- f4e:	80 e0       	ldi	r24, 0x00	; 0
- f50:	08 95       	ret
+00000f44 <SLPCTRL_init>:
+ f44:	80 e0       	ldi	r24, 0x00	; 0
+ f46:	08 95       	ret
 
-00000f52 <TIMER_0_init>:
- f52:	e0 e0       	ldi	r30, 0x00	; 0
- f54:	fa e0       	ldi	r31, 0x0A	; 10
- f56:	81 e0       	ldi	r24, 0x01	; 1
- f58:	82 87       	std	Z+10, r24	; 0x0a
- f5a:	80 e7       	ldi	r24, 0x70	; 112
- f5c:	92 e0       	ldi	r25, 0x02	; 2
- f5e:	86 a3       	std	Z+38, r24	; 0x26
- f60:	97 a3       	std	Z+39, r25	; 0x27
- f62:	89 e0       	ldi	r24, 0x09	; 9
- f64:	80 83       	st	Z, r24
- f66:	80 e0       	ldi	r24, 0x00	; 0
- f68:	08 95       	ret
+00000f48 <TIMER_0_init>:
+ f48:	e0 e0       	ldi	r30, 0x00	; 0
+ f4a:	fa e0       	ldi	r31, 0x0A	; 10
+ f4c:	81 e0       	ldi	r24, 0x01	; 1
+ f4e:	82 87       	std	Z+10, r24	; 0x0a
+ f50:	80 e7       	ldi	r24, 0x70	; 112
+ f52:	92 e0       	ldi	r25, 0x02	; 2
+ f54:	86 a3       	std	Z+38, r24	; 0x26
+ f56:	97 a3       	std	Z+39, r25	; 0x27
+ f58:	89 e0       	ldi	r24, 0x09	; 9
+ f5a:	80 83       	st	Z, r24
+ f5c:	80 e0       	ldi	r24, 0x00	; 0
+ f5e:	08 95       	ret
 
-00000f6a <TIMER_1_init>:
- f6a:	e0 e4       	ldi	r30, 0x40	; 64
- f6c:	fa e0       	ldi	r31, 0x0A	; 10
- f6e:	80 e7       	ldi	r24, 0x70	; 112
- f70:	92 e0       	ldi	r25, 0x02	; 2
- f72:	84 87       	std	Z+12, r24	; 0x0c
- f74:	95 87       	std	Z+13, r25	; 0x0d
- f76:	86 e4       	ldi	r24, 0x46	; 70
- f78:	81 83       	std	Z+1, r24	; 0x01
- f7a:	81 e0       	ldi	r24, 0x01	; 1
- f7c:	84 83       	std	Z+4, r24	; 0x04
- f7e:	85 83       	std	Z+5, r24	; 0x05
- f80:	85 e4       	ldi	r24, 0x45	; 69
- f82:	80 83       	st	Z, r24
- f84:	80 e0       	ldi	r24, 0x00	; 0
- f86:	08 95       	ret
+00000f60 <TIMER_1_init>:
+ f60:	e0 e4       	ldi	r30, 0x40	; 64
+ f62:	fa e0       	ldi	r31, 0x0A	; 10
+ f64:	80 e7       	ldi	r24, 0x70	; 112
+ f66:	92 e0       	ldi	r25, 0x02	; 2
+ f68:	84 87       	std	Z+12, r24	; 0x0c
+ f6a:	95 87       	std	Z+13, r25	; 0x0d
+ f6c:	86 e4       	ldi	r24, 0x46	; 70
+ f6e:	81 83       	std	Z+1, r24	; 0x01
+ f70:	81 e0       	ldi	r24, 0x01	; 1
+ f72:	84 83       	std	Z+4, r24	; 0x04
+ f74:	85 83       	std	Z+5, r24	; 0x05
+ f76:	85 e4       	ldi	r24, 0x45	; 69
+ f78:	80 83       	st	Z, r24
+ f7a:	80 e0       	ldi	r24, 0x00	; 0
+ f7c:	08 95       	ret
 
-00000f88 <WDT_init>:
- f88:	80 e0       	ldi	r24, 0x00	; 0
- f8a:	08 95       	ret
+00000f7e <WDT_init>:
+ f7e:	80 e0       	ldi	r24, 0x00	; 0
+ f80:	08 95       	ret
 
-00000f8c <_exit>:
- f8c:	f8 94       	cli
+00000f82 <_exit>:
+ f82:	f8 94       	cli
 
-00000f8e <__stop_program>:
- f8e:	ff cf       	rjmp	.-2      	; 0xf8e <__stop_program>
+00000f84 <__stop_program>:
+ f84:	ff cf       	rjmp	.-2      	; 0xf84 <__stop_program>

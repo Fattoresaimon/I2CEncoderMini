@@ -371,7 +371,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xf90
+.text           0x00000000      0xf86
  *(.vectors)
  .vectors       0x00000000       0x34 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
                 0x00000000                __vector_default
@@ -502,97 +502,97 @@ END GROUP
                 0x000008ee        0x6 i2c_register.o
                 0x000008ee                I2C_address_handler
  .text.I2C_read_handler
-                0x000008f4      0x110 i2c_register.o
+                0x000008f4      0x10a i2c_register.o
                 0x000008f4                I2C_read_handler
  .text.I2C_write_handler
-                0x00000a04      0x178 i2c_register.o
-                0x00000a04                I2C_write_handler
+                0x000009fe      0x174 i2c_register.o
+                0x000009fe                I2C_write_handler
  .text.I2C_init_clock_stretch
-                0x00000b7c       0x8a i2c_register.o
-                0x00000b7c                I2C_init_clock_stretch
+                0x00000b72       0x8a i2c_register.o
+                0x00000b72                I2C_init_clock_stretch
  .text.SystemTimer
-                0x00000c06        0x8 main.o
-                0x00000c06                SystemTimer
+                0x00000bfc        0x8 main.o
+                0x00000bfc                SystemTimer
  .text.startup.main
-                0x00000c0e       0x14 main.o
-                0x00000c0e                main
+                0x00000c04       0x14 main.o
+                0x00000c04                main
  .text.BOD_init
-                0x00000c22        0xa src/bod.o
-                0x00000c22                BOD_init
+                0x00000c18        0xa src/bod.o
+                0x00000c18                BOD_init
  .text.CLKCTRL_init
-                0x00000c2c        0xe src/clkctrl.o
-                0x00000c2c                CLKCTRL_init
+                0x00000c22        0xe src/clkctrl.o
+                0x00000c22                CLKCTRL_init
  .text.CPUINT_init
-                0x00000c3a        0x6 src/cpuint.o
-                0x00000c3a                CPUINT_init
+                0x00000c30        0x6 src/cpuint.o
+                0x00000c30                CPUINT_init
  .text.system_init
-                0x00000c40      0x10c src/driver_init.o
-                0x00000c40                system_init
+                0x00000c36      0x10c src/driver_init.o
+                0x00000c36                system_init
  .text.EVENT_SYSTEM_0_init
-                0x00000d4c        0xa src/evsys.o
-                0x00000d4c                EVENT_SYSTEM_0_init
+                0x00000d42        0xa src/evsys.o
+                0x00000d42                EVENT_SYSTEM_0_init
  .text.I2C_init
-                0x00000d56       0x3e src/i2c_slave.o
-                0x00000d56                I2C_init
+                0x00000d4c       0x3e src/i2c_slave.o
+                0x00000d4c                I2C_init
  .text.I2C_open
-                0x00000d94        0xc src/i2c_slave.o
-                0x00000d94                I2C_open
+                0x00000d8a        0xc src/i2c_slave.o
+                0x00000d8a                I2C_open
  .text.__vector_19
-                0x00000da0      0x118 src/i2c_slave.o
-                0x00000da0                __vector_19
+                0x00000d96      0x118 src/i2c_slave.o
+                0x00000d96                __vector_19
  .text.I2C_read
-                0x00000eb8        0x6 src/i2c_slave.o
-                0x00000eb8                I2C_read
+                0x00000eae        0x6 src/i2c_slave.o
+                0x00000eae                I2C_read
  .text.I2C_write
-                0x00000ebe        0xe src/i2c_slave.o
-                0x00000ebe                I2C_write
+                0x00000eb4        0xe src/i2c_slave.o
+                0x00000eb4                I2C_write
  .text.I2C_send_ack
-                0x00000ecc        0x8 src/i2c_slave.o
-                0x00000ecc                I2C_send_ack
+                0x00000ec2        0x8 src/i2c_slave.o
+                0x00000ec2                I2C_send_ack
  .text.I2C_set_read_callback
-                0x00000ed4        0xa src/i2c_slave.o
-                0x00000ed4                I2C_set_read_callback
+                0x00000eca        0xa src/i2c_slave.o
+                0x00000eca                I2C_set_read_callback
  .text.I2C_set_write_callback
-                0x00000ede        0xa src/i2c_slave.o
-                0x00000ede                I2C_set_write_callback
+                0x00000ed4        0xa src/i2c_slave.o
+                0x00000ed4                I2C_set_write_callback
  .text.I2C_set_address_callback
-                0x00000ee8        0xa src/i2c_slave.o
-                0x00000ee8                I2C_set_address_callback
+                0x00000ede        0xa src/i2c_slave.o
+                0x00000ede                I2C_set_address_callback
  .text.I2C_set_stop_callback
-                0x00000ef2        0xa src/i2c_slave.o
-                0x00000ef2                I2C_set_stop_callback
+                0x00000ee8        0xa src/i2c_slave.o
+                0x00000ee8                I2C_set_stop_callback
  .text.I2C_set_collision_callback
-                0x00000efc        0xa src/i2c_slave.o
-                0x00000efc                I2C_set_collision_callback
+                0x00000ef2        0xa src/i2c_slave.o
+                0x00000ef2                I2C_set_collision_callback
  .text.FLASH_0_init
-                0x00000f06        0x4 src/nvmctrl_basic.o
-                0x00000f06                FLASH_0_init
+                0x00000efc        0x4 src/nvmctrl_basic.o
+                0x00000efc                FLASH_0_init
  .text.FLASH_0_read_eeprom_byte
-                0x00000f0a        0x8 src/nvmctrl_basic.o
-                0x00000f0a                FLASH_0_read_eeprom_byte
+                0x00000f00        0x8 src/nvmctrl_basic.o
+                0x00000f00                FLASH_0_read_eeprom_byte
  .text.FLASH_0_write_eeprom_byte
-                0x00000f12       0x34 src/nvmctrl_basic.o
-                0x00000f12                FLASH_0_write_eeprom_byte
+                0x00000f08       0x34 src/nvmctrl_basic.o
+                0x00000f08                FLASH_0_write_eeprom_byte
  .text.protected_write_io
-                0x00000f46        0x8 src/protected_io.o
-                0x00000f46                protected_write_io
+                0x00000f3c        0x8 src/protected_io.o
+                0x00000f3c                protected_write_io
  .text.SLPCTRL_init
-                0x00000f4e        0x4 src/slpctrl.o
-                0x00000f4e                SLPCTRL_init
+                0x00000f44        0x4 src/slpctrl.o
+                0x00000f44                SLPCTRL_init
  .text.TIMER_0_init
-                0x00000f52       0x18 src/tca.o
-                0x00000f52                TIMER_0_init
+                0x00000f48       0x18 src/tca.o
+                0x00000f48                TIMER_0_init
  .text.TIMER_1_init
-                0x00000f6a       0x1e src/tcb.o
-                0x00000f6a                TIMER_1_init
+                0x00000f60       0x1e src/tcb.o
+                0x00000f60                TIMER_1_init
  .text.WDT_init
-                0x00000f88        0x4 src/wdt.o
-                0x00000f88                WDT_init
-                0x00000f8c                . = ALIGN (0x2)
+                0x00000f7e        0x4 src/wdt.o
+                0x00000f7e                WDT_init
+                0x00000f82                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000f8c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
-                0x00000f8c                _exit
-                0x00000f8c                exit
+ .fini9         0x00000f82        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+                0x00000f82                _exit
+                0x00000f82                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -611,16 +611,16 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000f8c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .fini0         0x00000f82        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000f90                _etext = .
+                0x00000f86                _etext = .
 
 .rodata
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.r*)
 
-.data           0x00803f00        0x4 load address 0x00000f90
+.data           0x00803f00        0x4 load address 0x00000f86
                 0x00803f00                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -689,8 +689,8 @@ END GROUP
                 0x00803f38                I2C_bus_error_interrupt_handler
                 0x00803f3a                I2C_read_interrupt_handler
                 0x00803f3c                PROVIDE (__bss_end, .)
-                0x00000f90                __data_load_start = LOADADDR (.data)
-                0x00000f94                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000f86                __data_load_start = LOADADDR (.data)
+                0x00000f8a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00803f3c        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -789,10 +789,10 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1257
+.debug_info     0x00000000     0x1264
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0x11d6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.4.301/gcc/dev/attiny402/avrxmega3/short-calls/crtattiny402.o
- .debug_info    0x000011d6       0x81 src/protected_io.o
+ .debug_info    0x000011d6       0x8e src/protected_io.o
 
 .debug_abbrev   0x00000000     0x10f2
  *(.debug_abbrev)

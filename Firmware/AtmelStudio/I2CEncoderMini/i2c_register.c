@@ -15,9 +15,9 @@
 
 
 #define I2C_ADDRES_EEPROM 0x00
-#define EEPROM_OFFSET_ADD 0x7F
-#define EEPROM_TOP_BORDER 0x80
-#define EEPROM_BOT_BORDER 0xFE
+#define EEPROM_OFFSET_ADD 0x80
+#define EEPROM_TOP_BORDER 0x81
+#define EEPROM_BOT_BORDER 0xFF
 volatile uint8_t register_address=0;
 volatile uint8_t data_type;
 
