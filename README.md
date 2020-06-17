@@ -18,7 +18,7 @@ This project is avaiable on our [Tindie store!]https://www.tindie.com/products/s
 * [Raspberry Library:](/Python%20Raspberry%20Library) Ready to use library in Python for the Raspberry board with example. (Future)
 * [Firmware:](/Firmware) Project folder of Atmel Studio contain the code running inside of the ATtiny 402
 * [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. 
-* [Datasheet EncoderMini:](EncoderMini_v1.0.pdf) Datasheet of the board with the description of the registers and some useful information.
+* [Datasheet EncoderMini:](EncoderMini_v1.1.pdf) Datasheet of the board with the description of the registers and some useful information.
 
 
 
