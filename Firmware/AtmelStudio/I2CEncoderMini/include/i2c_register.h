@@ -11,7 +11,7 @@
 
 
 #define ID_CODE		0x39
-#define ID_VERSION	0x10
+#define ID_VERSION	0x11
 
 typedef enum {
 	I2C_DATA_REGISTER,

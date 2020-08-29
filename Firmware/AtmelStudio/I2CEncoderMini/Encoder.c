@@ -163,8 +163,8 @@ void Encoder_PushButton_FSM(void) {
 		Int_set(S_PUSHP);
 		if (EncoderSwitch_GetValueFiltered() == true) {
 			pb_fsm = ENCODER_PUSHRESET;
-			Int_set(S_PUSHL);
-			Ext_Int_Set();
+			if(DoublePush!=0)
+				Int_set(S_PUSHL);
 			} else {
 			pb_fsm = ENCODER_WAITPUSH;
 			Int_set(S_PUSHR);
@@ -175,6 +175,8 @@ void Encoder_PushButton_FSM(void) {
 		case ENCODER_PUSHRESET:
 		double_push_cnt = 0;
 		if (EncoderSwitch_GetValueFiltered() == false) {
+			Int_set(S_PUSHR);
+			Ext_Int_Set();
 			pb_fsm = ENCODER_WAITPUSH;
 		}
 		break;
