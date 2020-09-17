@@ -4,7 +4,7 @@
 ## Introduction
 
 Here you can find the library and some examples for Raspberry Pi.
-For more details of the functionality of the board please read the [Datasheet](../EncoderI2CV2.1_v1.0.pdf) 
+For more details of the functionality of the board please read the [Datasheet](../I2CEncoderMini_v1.2.pdf) 
 
 ## Installation
 
